@@ -2,9 +2,9 @@
 
 // Save in file dbcon.ini:
 // [news_connection]
-// thishost = "127.0.0.1"
-// news_db_title = "news"
-// news_db_table = "microfilm"
+// thishost = "host_name"
+// news_db_title = "database_name"
+// news_db_table = "table_name"
 // user = "user"
 // pass = "pass"
 
