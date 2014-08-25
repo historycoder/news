@@ -1,5 +1,7 @@
 <?php
 
+echo "<link media=\"ALL\" rel=\"stylesheet\" type=\"text/css\" href=\"news_main.css\">";
+
 // Save in file dbcon.ini:
 // [news_connection]
 // thishost = "host_name"
@@ -128,7 +130,7 @@ if (!$nothing_to_search) {
 <script type="text/javascript" src="formly/formly.js"></script>
 <link rel="stylesheet" href="formly/formly.css" type="text/css" />
 
-<style type="text/css">
+<!--<style type="text/css">
 
 body {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -192,7 +194,7 @@ div.jGrowl div.resultsAlerts {
 	border: 1px solid #000;
 }
 
-</style>
+</style>!-->
 
 <script type="text/javascript">	
 	$(document).ready(function() {
@@ -203,21 +205,33 @@ div.jGrowl div.resultsAlerts {
 	
 </head>
 <body>
-
-<div style="text-align:center;padding:20px;">
-	<a class="navlinks" href="index.php">Microfilm Newspaper List</a>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a class="navlinks" href="http://www.ohiohistory.org/collections--archives/archives-library">Library/Archives Home</a>
+<div id="container">
+<div id="header" class ="container">
+	<a href="http://www.ohiohistory.org" id="logo">
+		<img src="logo-ohs.gif" alt="Ohio History Connection">
+	</a>
+</div>
+<div class="twonav" class="container">
+<!--<div style="text-align:center;padding:20px;">!-->
+	<ul>
+		<li>
+			<a class="navlinks" href="index.php">Microfilm Newspaper List</a>
+		</li>
+			<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!-->
+		<li>
+			<a class="navlinks" href="http://www.ohiohistory.org/collections--archives/archives-library">Library/Archives Home</a>
+		</li>
+	</ul>
 </div>
  	
-<div class="paging-section">
+<div class="paging-section" class="container">
 	<?php echo $pages->display_pages(); ?>
 </div>
 
 <br/>
 
 <?php
-	echo( '<div style="width:100%">' );
+	echo( '<div style="width:100%" class="container">' );
 	echo( '<form id="newsResults" style="margin: 0 auto; width: 500px">' );
 	
 	if ($nothing_to_search) {
@@ -261,11 +275,12 @@ div.jGrowl div.resultsAlerts {
 
 <div style="text-align:center;padding:6px; height: 30px;margin-top:10px;">
    
-    <a href="index.php">Microfilm Newspaper List Home</a>&nbsp;&nbsp;
+    <a href="index.php">Microfilm Newspaper List Home</a><!--&nbsp;&nbsp;!-->
 	<?php echo $pages->display_pages(); ?>
    
 </div> 
-	
-  </body>
+
+</div>	
+</body>
 </html>
 
