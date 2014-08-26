@@ -165,13 +165,14 @@ div.jGrowl div.validation {
 		</li>
 	</ul>
 	</div>!-->
-	<div class="heading"><h1>Microfilm Newspaper List Search<h1></div>
+	<div id="heading" class="container"><!--Aug 25 changed class to id & added class to container!--><h1>Microfilm Newspaper List Search<h1></div>
 	
-	<div class="maincontent">
+	<div id="maincontent" class="container"><!--Aug 25 changed class to id & added class to container!-->
 	<!--<div class="userinput">!-->
 	<!--<div style="width:100%">!-->
+	<!--style="width: 500px;margin: 0 auto"!-->
 	
-	<form id="newsform" name="newssearch" action="results.php" method="POST" onsubmit="return validateForm()"  style="width: 500px;margin: 0 auto">
+	<form id="newsform" name="newssearch" action="results.php" method="POST" onsubmit="return validateForm()">
 	<br/>Title:  <input type="search" name="title" size="25" maxsize="50">
 	City:  <input type="search" name="city" size="25" maxsize="50">
 	<br/>County: 
@@ -272,14 +273,14 @@ div.jGrowl div.validation {
 </form>
 <!--</div>!-->
 
-<div id="instructions">
+<div id="instructions" class="maincontent">
 <!--<div style="width:500px;margin: 0 auto;">!-->
 	
 <p>This is a database of MICROFILMED Ohio newspapers available for use in the Archives/Library Reading Room or through interlibrary loan.
 <br/>Search by NEWSPAPER TITLE, CITY, or COUNTY.</p>
 </div>
 </div>
-<div class="endmaincontent"></div>
+<div id="endmaincontent" class="container"></div>
 <div id="altinstructions" class="container">
 <p>A complete list of all the newspapers, including both filmed and unfilmed (original paper) titles, that are available for use at the Ohio Historical Society's Archives/Library can be accessed using the <a href="http://www.ohiohistory.org/occ/">Online Collection Catalog's</a> Newspaper Database search feature.</p>
 <!--<img src="bg-items-highlighted-bottom.png">!-->
@@ -288,6 +289,7 @@ div.jGrowl div.validation {
 <!--</div>!-->
 <div id="endcontainer"></div>
 </div>
-
+</div>
+</div>
 </body>
 </html>

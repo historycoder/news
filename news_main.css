@@ -1,5 +1,5 @@
-@import url("//hello.myfonts.net/count/2aeaef");
-@import url("webfonts.css");
+@import url("2aeaef");
+/*@import url("webfonts.css");*/
 
 html,body {
 	height:100%;
@@ -89,7 +89,7 @@ hr {
 	margin:0 0 22px 0;
 	clear:both;
 }
-/*inserted from user agent stylesheet 8/25/14 */
+/*inserted from user agent stylesheet 8/25/14 
 
 ul, menu, dir {
 display: block;
@@ -99,6 +99,52 @@ list-style-type: disc;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;
 -webkit-padding-start: 40px;
+}
+
+li{/*added Aug 25
+	display: list-item;
+	test-align: -webkit-match-parent;
+}
+div{
+	display: block;
+}
+a:-webkit-any-link {
+	color: -webkit-link;
+	text-decoration: underline;
+	cursor: auto;
+}
+
+input:not([type]), input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+padding: 1px 0px;
+}
+user agent stylesheetinput, input[type="password" i], input[type="search" i] {
+-webkit-appearance: textfield;
+padding: 1px;
+background-color: white;
+border: 2px inset;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+-webkit-rtl-ordering: logical;
+-webkit-user-select: text;
+cursor: auto;
+}
+user agent stylesheetinput, textarea, keygen, select, button {
+margin: 0em;
+font: -webkit-small-control;
+color: initial;
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+}
+user agent stylesheetinput, textarea, keygen, select, button, meter, progress {
+-webkit-writing-mode: horizontal-tb;
 }
 /*end user agent stylesheet*/
 .content-section img {
@@ -287,8 +333,8 @@ End of Original Style*/
 #container {
 	background:url("bg-page.png") repeat-y center top;
 	min-width: 100%;
-	padding:0px 5px 12px 5px;
-	/*padding-bottom: 12px;*/
+	/*padding:0px 5px 12px 5px;*/
+	padding-bottom: 12px;
 	display: block;
 	text-align: center;
 	font-family: 'MuseoSans-300', Arial, sans-serif;
@@ -297,7 +343,7 @@ End of Original Style*/
 }
 .container{
 	width: 960px;
-	margin-top: 0px auto;
+	margin-top: 0 auto;
 	text-align: left;
 	position: relative;
 	padding-left:1px;
@@ -306,9 +352,13 @@ End of Original Style*/
 #header{/* Aug 21 - causes container background to appear behind img & keep img off nav bar*/
 	font-family: 'Cabrito-NorMed',
 	Calibri, 'Trebuchet MS', sans-serif;
-	/*height: 161px;*/
+	height: 161px;
+	/*Aug 25- readded original hight
 	padding: 1em;
+	clear: both;*/
+	position: relative;
 	clear: both;
+	left:4.5em;/*added Aug 25- header was aligned far left of screen*/
 }
 a img{
 	border: none;
@@ -316,9 +366,11 @@ a img{
 #logo {
 	position:absolute;
 	top:6px;
-	left:60px;
+	left: 15px; /*copied Aug 25*/
+	/*left:60px; removed Aug 25*/
 	width:329px;
 	height:66px;
+	display: block; /*copied Aug 25*/
 }
 
 #nav-utility ul li,
@@ -985,9 +1037,9 @@ a.navlinks:hover{
 
 /*from index.php*/
 
-.heading {
-	margin-top: 175px;
-	margin-bottom: 10px;
+#heading {
+	margin-top: 18px;
+	margin-bottom: -4em;
 	text-align:center;
 	font-size:200%;padding:20px;
 	/*main.css*/
@@ -1017,25 +1069,46 @@ p {
 	clear: both;
 }
 
-.maincontent{
+#maincontent{
 	/*from .items-highlighted*/
 	clear: both;
-	background:url("bg-items-highlighted.png") no-repeat right top;
+	background:url("bg-items-highlighted.png") no-repeat left top;
 	float:left;
-	width:730px;
-	margin-left:160px;
-	padding-left: 30px;
-    padding-top: 30px;
+	height: 72px;
+	width: 960px;
+	margin: 0% 0% 0% 13%;
+	padding-top: 70px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 200px;
 }
-
-.endmaincontent{
-	background:url("bg-items-highlighted-bottom.png") no-repeat right top;
+.heading{
+	width: 960px;
+	height: 350px;
+}
+#newsform{
+	width: 500px;
+	margin-left: 9%;
+	float: left;
+	
+}
+#instructions{
+	width: 630px;
+	margin-right: 1%;
+	margin-left: 1%;
+	float: left;
+	text-align: center;
+}
+#endmaincontent{
+	background:url("bg-items-highlighted-bottom.png") no-repeat left top;
 	float: left;
 	height: 72px;
 	width: 757px;
-	margin-left:130px;
+	margin: 0% 0% 0% 13%;
+	/*margin-left: 100px;
+	/*margin-left:130px;
 	padding-left: 30px;
-    padding-top: 30px;
+    padding-top: 30px;*/
 	clear: both;
 	margin-bottom: -3em;
 }
@@ -1051,7 +1124,7 @@ float:bottom;
 padding: 70px;
 margin: 0 auto;
 }
-div.container #altinstructions{
+/*div.container -removed Aug 25*/ #altinstructions{
 clear: both;
 float: bottom;
 text-align: center;
