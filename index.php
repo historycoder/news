@@ -70,9 +70,9 @@ div.jGrowl div.validation {
 				<a href="http://www.ohiohistory.org" id="logo"><img src="logo-ohs.gif" alt="Ohio Historical Society"></a>
 				<div id="nav-utility">
 					<ul>
-						<li class="first-child"><a href="/visit">Visit</a></li>
-						<li><a href="/get-involved">Get Involved</a></li>
-						<li class="last-child"><a href="/about-us">About Us</a></li>
+						<li class="first-child"><a href="http://www.ohiohistory.org/visit">Visit</a></li>
+						<li><a href="http://www.ohiohistory.org/get-involved">Get Involved</a></li>
+						<li class="last-child"><a href="http://www.ohiohistory.org/about-us">About Us</a></li>
 					</ul>
 				</div>
 				<div id="nav-audience">
@@ -120,24 +120,24 @@ div.jGrowl div.validation {
 					// -->
 					</script>
 					<option value="" selected="">Quick Links</option>
-					<option value="/ohio-historic-preservation-office/building-doctor" target="_blank">Building Doctor</option>
-					<option value="/ohio-historic-preservation-office/certified-local-governments" target="_blank">Certified Local Government</option>
+					<option value="http://www.ohiohistory.org/ohio-historic-preservation-office/building-doctor" target="_blank">Building Doctor</option>
+					<option value="http://www.ohiohistory.org/ohio-historic-preservation-office/certified-local-governments" target="_blank">Certified Local Government</option>
 					<option value="http://www.creativelearningfactory.org/" target="_blank">Creative Learning Factory</option>
 					<option value="http://ohsweb.ohiohistory.org/death" target="_blank">Death Certificate Index</option>
-					<option value="/museums-and-historic-sites/historic-sites--facilities-projects" target="_blank">Historic Sites &amp; Facilities Projects</option>
+					<option value="http://www.ohiohistory.org/museums-and-historic-sites/historic-sites--facilities-projects" target="_blank">Historic Sites &amp; Facilities Projects</option>
 					<option value="http://www.ohiohistory.org/collections--archives/state-archives/lgrp-home" target="_blank">Local Government Records Program</option>
 					<option value="http://www.ohioasamerica.org/" target="_blank">Ohio As America Textbook</option>
 					<option value="http://www.ohiocivilwar150.org/" target="_blank">Ohio Civil War 150</option>
-					<option value="/local-history-office/historical-markers" target="_blank">Ohio Historical Markers</option>
+					<option value="http://www.ohiohistory.org/local-history-office/historical-markers" target="_blank">Ohio Historical Markers</option>
 					<option value="http://www.ohiomemory.org" target="_blank">Ohio Memory</option>
 					<option value="http://ohsweb.ohiohistory.org/ohiopix" target="_blank">OhioPix</option>
 					<option value="http://www.ohiohistory.org/occ/" target="_blank">Online Collections Catalog</option>
-					<option value="/collections--archives/state-archives" target="_blank">Records Retention &amp; Disposition</option>
-					<option value="/statehoodday" target="_blank">Statehood Day</option>
+					<option value="http://www.ohiohistory.org/collections--archives/state-archives" target="_blank">Records Retention &amp; Disposition</option>
+					<option value="http://www.ohiohistory.org/statehoodday" target="_blank">Statehood Day</option>
 				</select>
 				<ul id="nav-quicklinks">
-					<li id="nav-donate"><a href="/donate">Give</a></li>
-					<li id="nav-join"><a href="/membership" onclick="pageTracker._trackPageview('/membership/topButton.html');">Join</a></li>
+					<li id="nav-donate"><a href="http://www.ohiohistory.org/donate">Give</a></li>
+					<li id="nav-join"><a href="http://www.ohiohistory.org/membership" onclick="pageTracker._trackPageview('http://www.ohiohistory.org/membership/topButton.html');">Join</a></li>
 					<li id="nav-shop"><a href="http://www.ohiohistorystore.com">Shop</a></li>
 				</ul>
 		</div>
@@ -288,6 +288,75 @@ div.jGrowl div.validation {
 
 <!--</div>!-->
 <div id="endcontainer"></div>
+<div id="footer" class="container">
+		<div class="container">
+
+		<div class="footer-nav" id="footer-nav-1">
+			<ul>
+				<li><a href="http://www.ohiohistory.org/museums/location">Map of Locations</a></li>
+				<li><a href="http://www.ohiohistory.org/about-us/contact">Contact Us</a></li>
+				<li><a href="http://www.ohiohistory.org/faqs">FAQ</a></li>
+				<li><a href="http://www.ohiohistory.org/about-us/website/sitemap">Web Site Map</a></li>
+				<li><a href="http://www.youtube.com/ohiohistory">OHS Video Channel</a></li>
+				<ul class="social-media-links">
+						<li id="facebook"><a href="http://www.facebook.com/pages/Ohio-Historical-Society/22003234344">Facebook</a></li>
+						<li id="twitter"><a href="https://twitter.com/ohiohistory">Twitter</a></li>
+						<li id="youtube"><a href="http://www.youtube.com/ohiohistory">YouTube</a></li>
+						<li id="enews"><a href="http://www.ohiohistory.org/enews">Histore-news</a></li>
+				</ul>
+			</ul>
+		</div>
+		<div class="footer-nav" id="footer-nav-3">
+			<ul>
+				<li><a href="http://www.ohiohistory.org/jobs/current-openings">Jobs</a></li>
+				<li><a href="http://www.ohiohistory.org/volunteer-department/new-volunteers">Volunteer</a></li>
+				<li><a href="http://www.ohiohistory.org/about-us/advocacy">Advocacy</a></li>
+				<li><a href="http://www.ohiohistory.org/programs--events/event-rental">Facility Rental</a></li>
+				<li><a href="http://www.ohiohistory.org/museums/ohc">Ohio History Center</a></li>
+			</ul>
+
+		</div>
+		<div class="footer-nav" id="footer-nav-3">
+			<ul>
+				<li><a href="http://www.ohiohistory.org/about-us">About us</a></li>
+				<li><a href="http://www.ohiohistory.org/e-news">Ohio HistorE-News</a></li>
+				<li><a href="http://www.ohiohistory.org/about-us/newsroom">Newsroom</a></li>
+				<li><a href="http://www.ohiohistory.org/about-us/fact-sheet">Fact Sheet</a></li>
+				<li><a href="http://www.ohiohistory.org/about-us/privacy-policy">Privacy Policy</a></li>
+			</ul>
+
+		</div>
+		<div style="align:center; margin-bottom:0.3em; position:absolute; bottom:20%; left:33%; text-align:center;" valign="bottom"><small>800 E. 17<sup>th</sup> Ave. Columbus, OH 43211
+		<br>
+		(614) 297-2300
+		</small></div>
+	</div>
+<!---->
+    <!-- CLARIVOY CODE / DO NOT REMOVE -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.www.ohiohistory.org"]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://id.clarivoy.com/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "42"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var ut_params = ut_params || [];ut_params.push("UT-736573600");//version:0.4
+(function() {var ut = document.createElement('script'); ut.type = 'text/javascript'; ut.async = true;
+ut.src = (("https:" == document.location.protocol) ? "https://" : "http://") + 'pixel.claritytag.com/javascripts/clarity.js';
+var script = document.getElementsByTagName('script')[0]; script.parentNode.insertBefore(ut, script);})();
+</script>
+<!-- END CLARIVOY CODE -->
+
+</div>
 </div>
 </div>
 </div>

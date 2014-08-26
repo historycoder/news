@@ -741,8 +741,10 @@ a img{
 /* Footer */
 
 #footer {
-	background:url("/Image%20Library/Static%20Images/bg/bg-footer-bottom.png") no-repeat left bottom;
+	background:url("bg-footer-bottom.png") no-repeat left bottom;
 	padding-bottom:6px;
+	clear: both;
+	left: 4.5em;
 }
 
 #footer .container {
@@ -754,7 +756,7 @@ a img{
 	margin:20px 0 26px 30px;
 	padding-right:26px;
 	float:left;
-	background:url("/Image%20Library/Static%20Images/bg/bg-footer-divider.png") repeat-y right top;
+	background:url("bg-footer-divider.png") repeat-y right top;
 	min-height:210px;
 }
 
