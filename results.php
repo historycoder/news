@@ -237,7 +237,7 @@ div.jGrowl div.resultsAlerts {
 					<ul>
 						<li class="first-child"><a href="http://www.ohiohistory.org/teacher">Teacher</a></li>
 						<li><a href="http://www.ohiohistory.org/history-geek">History Geek</a></li>
-						<li><a href="/kid">Kid</a></li>
+						<li><a href="http://www.ohiohistory.org/kid">Kid</a></li>
 						<li class="last-child"><a href="http://www.ohiohistory.org/family">Family</a></li>
 					</ul>
 				</div>

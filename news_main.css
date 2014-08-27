@@ -1,6 +1,9 @@
 @import url("2aeaef");
 /*@import url("webfonts.css");*/
-
+/*********************/
+/****Global Styles****/
+/*********************/
+/**Body**/
 html,body {
 	height:100%;
 	min-height:100%;
@@ -17,7 +20,7 @@ body {
 	color: #1A7191;
 }
 
-/* Global Styles */
+/* h, p, ul, l, a  */
 
 h1,h2,h3,h4,h5 {
 	font-size:100%;
@@ -326,10 +329,7 @@ a img {
 }
 End of Original Style*/
 
-
-/********************/
-/*Global News Styles*/
-/********************/
+/**Content Container**/
 #container {
 	background:url("bg-page.png") repeat-y center top;
 	min-width: 100%;
@@ -349,7 +349,8 @@ End of Original Style*/
 	padding-left:1px;
 	/*display: block;*/
 }
-#header{/* Aug 21 - causes container background to appear behind img & keep img off nav bar*/
+/**Header**/
+#header{
 	font-family: 'Cabrito-NorMed',
 	Calibri, 'Trebuchet MS', sans-serif;
 	height: 161px;
@@ -914,128 +915,6 @@ a img{
 }
 
 
-/*Original Style before copying main site
-#nav-utility{
-	position: absolute;
-	top: 93px;
-	left: 158px;
-	font-size: 20px;
-	display: block;
-}
-#nav-utility li{
-	border-right: 2px solid #458dae;
-	margin-right: 10px;
-	padding-right: 10px;
-}
-li{
-	display: list-item;
-	text-align: -webkit-match-parent;
-}
-ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	line-height: 1.5em;
-}
-#nav-main{
-	background: #3f9acb;
-	positon: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	display: table;
-	text-align: center;
-	width: 960px;
-	padding: 0 65px;
-	z-index: 901;
-	padding-left: 1px;
-}
-
-#nav-main a{
-	color: #ffffff;
-	height: 32px;
-	vertical-align: center;
-	text-decoration: none;
-	line-height: 32px;
-	font-size: 12 px;
-	display: block;
-	font-family: 'MuseoSans-500', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-#singlenav {
-	background: #3f9acb;
-	bottom: 0;
-	left: 0;
-	padding: 0 65px;
-	padding-left: 1px;
-	clear: both;
-	text-align:center;
-	margin:102px 0px 50px 58px;
-	background-color: #3f9acb;
-	width: 100%;
-	width: 960px;
-}
-
-#singlenav ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-#singlenav  li{
-	display: inline;
-}
-
-#singlenav a{
-	color: #ffffff;
-	height: 32px;
-	vertical-align: center;
-	text-decoration: none;
-	line-height: 32px;
-	font-size: 12 px;
-	display: block;
-	font-family: 'MuseoSans-500', Calibri, 'Trebuchet MS', sans-serif;
-}
-*/
-/*Original Navigation for Results.php*/
-.twonav {
-	text-align:center;
-	padding:8px 0px 8px 0px;
-	margin:102px 0px 50px 58px;
-	background-color: #3f9acb;
-	width: 960px;
-}
-.twonav ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-.twonav li{
-	display: inline;
-	margin:0px 20px 0px 40px;
-}
-
-a{
-	text-decoration: none;
-}
-.navlinks a{
-	clear: both;
-	text-align: center;
-	text-decoration: none;
-	/*margin-top:100px;*/
-	/*margin-left:185px;*/
-	font-size:15px;
-	color:#F8F8FF;
-}
-a.navlinks:link{
-	color:#F8F8FF;
-}
-a.navlinks:visited{
-	color:#F8F8FF;
-}
-a.navlinks:hover{
-	color:#312a21;
-}
 
 /*from index.php*/
 

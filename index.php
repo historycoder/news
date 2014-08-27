@@ -6,6 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
 <title>Microfilm Newspaper List Search</title>
 <link media="ALL" rel="stylesheet" type="text/css" href="news_main.css">
+<!--<script type="text/javascript" src="global.js"></script>!-->
+<!--<script type="text/javascript" src="jquery.min.js"></script>!-->
+<!--<script type="text/javascript" src="jquery-ui.min.js"></script>!-->
+<!--<script type="text/javascript" src="jquery-1-7-2-min.js"></script>!-->
+
+<!--<link rel="stylesheet" href="jquery.jgrowl.min.css" />!-->
+<!--<script src="jquery.jgrowl.min.js"></script>!-->
+
+<!--Original Index Script!-->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 
@@ -36,6 +45,8 @@
 		
 	}
 </script>
+<!--End of Index Original Script!-->
+
 <!--<style type="text/css">
 
 body {
@@ -65,7 +76,40 @@ div.jGrowl div.validation {
 </style>!-->
 </head> 
 <body>
+
 	<div id ="container">
+		<script language="JavaScript">
+		<!--
+
+		 function load(form) {
+
+		  var url = form.list.options[form.list.selectedIndex].value;
+
+		  if (url != "") location.href = url;
+
+		  return false;
+
+		}
+
+		 // -->
+
+		</script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-1619316-2']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		<meta name="p:domain_verify" content="pinterest-9534a.html">
+		<meta name="p:domain_verify" content="9534ab0eaa9c2234ac7c42ff4a1708c1">
+		
 	<div id="header" class="container">
 				<a href="http://www.ohiohistory.org" id="logo"><img src="logo-ohs.gif" alt="Ohio Historical Society"></a>
 				<div id="nav-utility">
@@ -79,7 +123,7 @@ div.jGrowl div.validation {
 					<ul>
 						<li class="first-child"><a href="http://www.ohiohistory.org/teacher">Teacher</a></li>
 						<li><a href="http://www.ohiohistory.org/history-geek">History Geek</a></li>
-						<li><a href="/kid">Kid</a></li>
+						<li><a href="http://www.ohiohistory.org/kid">Kid</a></li>
 						<li class="last-child"><a href="http://www.ohiohistory.org/family">Family</a></li>
 					</ul>
 				</div>
@@ -141,30 +185,6 @@ div.jGrowl div.validation {
 					<li id="nav-shop"><a href="http://www.ohiohistorystore.com">Shop</a></li>
 				</ul>
 		</div>
-	<!--<div id="header" class ="container">
-	<a href="http://www.ohiohistory.org" id="logo" class="header">
-		<img src="logo-ohs.gif" alt="Ohio History Connection">
-	</a>
-	</div>
-	<!--<div id="nav-utility">
-		<ul>
-			<li class="first-child">
-				<a href="/visit">Visit</a>
-			</li>
-			<li href="/get-involved">Get Involved</a>
-			</li>
-			<li class="last-child">
-				<a href="/about-us">About Us</a>
-			</li>
-		</ul>
-	</div>
-	<div id="singlenav" class="container">
-	<ul>
-		<li>
-			<a id="navlinks" class ="backtosinglenav"  href="http://www.ohiohistory.org/collections--archives/archives-library">Library/Archives Home</a>
-		</li>
-	</ul>
-	</div>!-->
 	<div id="heading" class="container"><!--Aug 25 changed class to id & added class to container!--><h1>Microfilm Newspaper List Search<h1></div>
 	
 	<div id="maincontent" class="container"><!--Aug 25 changed class to id & added class to container!-->
