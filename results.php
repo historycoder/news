@@ -136,7 +136,12 @@ if (!$nothing_to_search) {
 	top:50px;
 	right: 20px;
 }
-
+ hr{
+	height: 6px;
+	margin: 0 0 15px 0;
+	clear: both;
+ }
+ 
 </style>
 	
 </head>
@@ -603,7 +608,7 @@ if (!$nothing_to_search) {
 		</div>
  	</form>
 	
-	<div class="paging-section" class="container">
+	<div id="paging-section" class="container">
 		<?php echo $pages->display_pages(); ?>
 	</div>
 	<br/>
@@ -649,11 +654,11 @@ if (!$nothing_to_search) {
 			echo( '</form>' );
 			echo( '</div>' );	
 		?>
+	<div id="bottom-paging-section" class="container">
+			
+		<?php echo $pages->display_pages(); ?><br/><br/>
+		<a href="index.php">Microfilm Newspaper List Home</a>
 
-	<div style="text-align:center;padding:6px; height: 30px;margin-top:10px;">
-   
-		<a href="index.php">Microfilm Newspaper List Home</a><!--&nbsp;&nbsp;!-->
-			<?php echo $pages->display_pages(); ?>
    
 	</div> 
 

@@ -83,13 +83,13 @@ h4 {
 	font-family:Georgia, Palatino,'Palatino Linotype', Times, 'Times New Roman', serif;
 	clear:both;
 }
-hr {
+/*hr {
 	background:url("bg-horizontal-line.png") no-repeat left center;
 	height:12px;
 	border:none;
 	margin:0 0 22px 0;
 	clear:both;
-}
+}*/
 
 .image img {
 	display:block;
@@ -703,15 +703,23 @@ div.jGrowl div.resultsAlerts {
 	min-height: 0px;
 	border: 1px solid #000;
 }
-.paging-section {
+#paging-section {
 	text-align:center;
 	padding:6px;
 	height: 30px;
 }
+#bottom-paging-section{
+	text-align:center;
+	padding:6px;
+	height: 30px;
+	margin-top:10px;
+	margin-bottom: 40px;
+	
+}
 	
 .paginate {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: .7em;
+	font-size: 1em;
 }
 
 .paginate a{
@@ -719,6 +727,7 @@ div.jGrowl div.resultsAlerts {
 	padding: 2px 6px 2px 6px;
 	text-decoration: none;
 	color: #000080;
+	/*font-size: 12px;*/
 }
 
 .paginate a:hover {
@@ -730,7 +739,7 @@ div.jGrowl div.resultsAlerts {
 span.inactive {
 	border: 1px solid #999;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: .7em;
+	font-size: 1em;
 	padding: 2px 6px 2px 6px;
 	color: #999;
 	cursor: default;
