@@ -1,26 +1,15 @@
-<!doctype html public 
-  "-//w3c//dtd html 4.01 transitional//en"
-  "http://www.w3.org/tr/1999/rec-html401-19991224/loose.dtd">
-<html> 
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
 <title>Microfilm Newspaper List Search</title>
 <link media="ALL" rel="stylesheet" type="text/css" href="news_main.css">
-<!--<script type="text/javascript" src="global.js"></script>!-->
-<!--<script type="text/javascript" src="jquery.min.js"></script>!-->
-<!--<script type="text/javascript" src="jquery-ui.min.js"></script>!-->
-<!--<script type="text/javascript" src="jquery-1-7-2-min.js"></script>!-->
-
-<!--<link rel="stylesheet" href="jquery.jgrowl.min.css" />!-->
-<!--<script src="jquery.jgrowl.min.js"></script>!-->
-
-<!--Original Index Script!-->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.2.12/jquery.jgrowl.min.css" />
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-jgrowl/1.2.12/jquery.jgrowl.min.js"></script>
-
 <script type="text/javascript" src="formly/formly.js"></script>
 <link rel="stylesheet" href="formly/formly.css" type="text/css" />
 
@@ -46,339 +35,625 @@
 	}
 </script>
 <!--End of Index Original Script!-->
-
-<!--<style type="text/css">
-
-body {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-.heading {
-	text-align:center;
-	font-size:120%;padding:20px;
-}
-.backto {
-	text-align:center;
-	padding:10px;
-}
-a.navlinks {
-	text-decoration: none;
-}
-a.navlinks:hover {
-	color: red;
-	text-decoration: underline;
-}
-div.jGrowl div.validation {
-	background-color: #808080;
-	width: 200px;
-	min-height: 0px;
-	border: 1px solid #000;
-}
-</style>!-->
+<!-------------------!-->
 </head> 
-<body>
+	<body>
+		<div id ="container">
+			<!--added from main!-->
+			<script language="JavaScript">
+			<!--
 
-	<div id ="container">
-		<script language="JavaScript">
-		<!--
+			 function load(form) {
 
-		 function load(form) {
+			  var url = form.list.options[form.list.selectedIndex].value;
 
-		  var url = form.list.options[form.list.selectedIndex].value;
+			  if (url != "") location.href = url;
 
-		  if (url != "") location.href = url;
+			  return false;
 
-		  return false;
+			}
 
-		}
+			 // -->
 
-		 // -->
+			</script>
+			<script type="text/javascript">
 
-		</script>
-		<script type="text/javascript">
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-1619316-2']);
+			  _gaq.push(['_trackPageview']);
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-1619316-2']);
-		  _gaq.push(['_trackPageview']);
+			  (function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
 
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+			</script>
+			<meta name="p:domain_verify" content="pinterest-9534a.html">
+			<meta name="p:domain_verify" content="9534ab0eaa9c2234ac7c42ff4a1708c1">
+			<!--end add from main!-->
+			<!------------------------!-->
+		<!--Adding 8/27 from main!-->
+		<form name="form1" method="post" action="/" id="form1">
+			<div>
+				<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+				<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
 
-		</script>
-		<meta name="p:domain_verify" content="pinterest-9534a.html">
-		<meta name="p:domain_verify" content="9534ab0eaa9c2234ac7c42ff4a1708c1">
-		
-	<div id="header" class="container">
-				<a href="http://www.ohiohistory.org" id="logo"><img src="logo-ohs.gif" alt="Ohio Historical Society"></a>
-				<div id="nav-utility">
-					<ul>
-						<li class="first-child"><a href="http://www.ohiohistory.org/visit">Visit</a></li>
-						<li><a href="http://www.ohiohistory.org/get-involved">Get Involved</a></li>
-						<li class="last-child"><a href="http://www.ohiohistory.org/about-us">About Us</a></li>
-					</ul>
+			</div>
+			<script type="text/javascript">
+				//<![CDATA[
+				var theForm = document.forms['form1'];
+				function __doPostBack(eventTarget, eventArgument) {
+					if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+						theForm.__EVENTTARGET.value = eventTarget;
+						theForm.__EVENTARGUMENT.value = eventArgument;
+						theForm.submit();
+					}
+				}
+				//]]>
+			</script>
+			<script src="http://ajax.aspnetcdn.com/ajax/4.5.1/1/WebForms.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				//<![CDATA[
+				window.WebForm_PostBackOptions||document.write('<script type="text/javascript" src="/WebResource.axd?d=oCKj8IvNuIk7gy1HJUatdrxc44YP4nQWME8Wxdd6DGPnke3qspDXbthnORZlPAcXN7_u1xDrkIusxuRK-nyT4HeVlao1&amp;t=635195661120000000"><\/script>');//]]>
+			</script>
+			<script type="text/javascript">
+				//<![CDATA[
+				var jTemplateType='0';var loadedFromVersion='False';//]]>
+			</script>
+			<script src="http://ajax.aspnetcdn.com/ajax/4.5.1/1/MicrosoftAjax.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				//<![CDATA[
+				(window.Sys && Sys._Application && Sys.Observer)||document.write('<script type="text/javascript" src="/ScriptResource.axd?d=C0-jv8mCc3YH01nQBjS-_7iqxAhQwr1PAupAXWe9c-BPPGUzsXZR04BVmo0GfZ6DYf-qRgRxNRrIK4XxIcCtMtvwYi2DvMZh8gSrkeCsXgxJzW1HtAy8NZq70TAxcfFSjb7b6N-fcCXIWvVYDR11RiosX1o1&t=ca758f3"><\/script>');//]]>
+			</script>
+			<script src="http://ajax.aspnetcdn.com/ajax/4.5.1/1/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				//<![CDATA[
+				(window.Sys && Sys.WebForms)||document.write('<script type="text/javascript" src="/ScriptResource.axd?d=CkWDPtA3hXBHN7AqG5hE3AqHF3VpqsYHc2CORuy9yY-68UdbUfqEq988tjrPIpe-j_OLXO-j30fU7S3eQMTXmXucYiW4XyTEgu6YEG0ouvBlwMiFFZrNJMo6VfqMY2-D_9TN8uAlpOAtlcy_A1FeI5E3pNtBAkyeM0UpNdqXkUDtx89Z0&t=ca758f3"><\/script>');//]]>
+			</script>
+			<script type="text/javascript">
+				//<![CDATA[
+				Sys.WebForms.PageRequestManager._initialize('scriptManager', 'form1', [], [], [], 90, '');
+				//]]>
+			</script>
+			<!--End Added on 8/27!-->
+
+				<div id="header" class="container">
+						<a href="http://www.ohiohistory.org" id="logo"><img src="logo-ohs.gif" alt="Ohio Historical Society"></a>
+						<div id="nav-utility">
+							<ul>
+								<li class="first-child"><a href="http://www.ohiohistory.org/visit">Visit</a></li>
+								<li><a href="http://www.ohiohistory.org/get-involved">Get Involved</a></li>
+								<li class="last-child"><a href="http://www.ohiohistory.org/about-us">About Us</a></li>
+							</ul>
+						</div>
+						<div id="nav-audience">
+							<ul>
+								<li class="first-child"><a href="http://www.ohiohistory.org/teacher">Teacher</a></li>
+								<li><a href="http://www.ohiohistory.org/history-geek">History Geek</a></li>
+								<li><a href="http://www.ohiohistory.org/kid">Kid</a></li>
+								<li class="last-child"><a href="http://www.ohiohistory.org/family">Family</a></li>
+							</ul>
+						</div>
+						
+						<div id="nav-main"><!--Drop Down Navigation!-->
+							<!--?xml version="1.0" encoding="utf-16"?-->
+								<ul class="mainMenu" id="topNav">						
+									<li id="museums-and-historic-sites" class="link1"><a href="http://www.ohiohistory.org/museums-and-historic-sites" class="navLevel2" title="Museums &amp; Historic Sites"><span>Museums &amp; Historic Sites</span></a>
+										<div class="level1" style="display: none;">
+											<div class="level1-inner">
+												<ul>
+													<li id="f333c4bb-b6ed-43df-b464-cbbc0e72ae86" class="">
+													<a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name" id="f333c4bb-b6ed-43df-b464-cbbc0e72ae86" class="navLevel3" title="Museum &amp; Historic Sites by Name"><span>Museum &amp; Historic Sites by Name</span></a>
+													</li>
+													<li id="69daba0a-2b3a-4a4f-8cb9-cb35e2a7411c" class="">
+													<a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic" id="69daba0a-2b3a-4a4f-8cb9-cb35e2a7411c" class="navLevel3" title="Museum &amp; Historic Sites by Topic"><span>Museum &amp; Historic Sites by Topic</span></a>
+													</li>
+													<li id="6376006e-4295-46e6-9f7c-9237d3c68a6b" class="">
+													<a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-location" id="6376006e-4295-46e6-9f7c-9237d3c68a6b" class="navLevel3" title="Museum &amp; Historic Sites by Location"><span>Museum &amp; Historic Sites by Location</span></a>
+													</li>
+													<li id="9c4f7097-2d3f-4347-a559-0cb3410878b7" class="">
+													<a href="http://www.ohiohistory.org/museums-and-historic-sites/museums--historic-sites-by-region" id="9c4f7097-2d3f-4347-a559-0cb3410878b7" class="navLevel3" title="Museums &amp; Historic Sites by Region"><span>Museums &amp; Historic Sites by Region</span></a>
+													</li>
+													<li id="f2c9c665-ca0b-4d0a-87d2-cb26cf1a0595" class="">
+													<a href="http://www.ohiohistory.org/museums-and-historic-sites/passport-program" id="f2c9c665-ca0b-4d0a-87d2-cb26cf1a0595" class="navLevel3" title="Passport Program"><span>Passport Program</span></a>
+													</li>
+													<li id="da2eca56-3921-4074-b8d2-af110dea0d1c" class="">
+													<a href="http://www.ohiohistory.org/museums-and-historic-sites/blue-star-museums--historic-sites" id="da2eca56-3921-4074-b8d2-af110dea0d1c" class="navLevel3" title="Blue Star Museums &amp; Historic Sites"><span>Blue Star Museums &amp; Historic Sites</span></a>
+													</li>
+													<li id="88d38c63-cc1b-47d2-a229-8dbcf5506830" class="">
+													<a href="http://www.ohiohistory.org/museums-and-historic-sites/geocaching" id="88d38c63-cc1b-47d2-a229-8dbcf5506830" class="navLevel3" title="Geocaching"><span>Geocaching</span></a>
+													</li>
+													<li id="a557cf19-4bea-4372-b314-4df82a8969db" class="">
+													<a href="http://www.ohiohistory.org/museums-and-historic-sites/historic-sites--facilities-projects" id="a557cf19-4bea-4372-b314-4df82a8969db" class="navLevel3" title="Historic Sites &amp; Facilities Projects"><span>Historic Sites &amp; Facilities Projects</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+													
+									<li id="exhibits" class="link2"><a href="http://www.ohiohistory.org/exhibits" class="navLevel2" title="Exhibits"><span>Exhibits</span></a>
+										<div class="level1" style="display: none;">
+											<div class="level1-inner">
+												<ul>
+													<li id="3d07dd6a-ca45-4e50-8f86-faa232eec416" class="">
+													<a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits" id="3d07dd6a-ca45-4e50-8f86-faa232eec416" class="navLevel3" title="Ohio History Center Exhibits"><span>Ohio History Center Exhibits</span></a>
+													</li>
+													<li id="4c7cb876-0d99-44ff-9c09-ca42ae5ca6b4" class="">
+													<a href="http://www.ohiohistory.org/exhibits/upcoming-exhibits" id="4c7cb876-0d99-44ff-9c09-ca42ae5ca6b4" class="navLevel3" title="Upcoming Exhibits"><span>Upcoming Exhibits</span></a>
+													</li>
+													<li id="3b73a3a3-9b84-4702-b4a1-3afea5bee42e" class=""><a href="http://www.ohiohistory.org/exhibits/online-exhibits" id="3b73a3a3-9b84-4702-b4a1-3afea5bee42e" class="navLevel3" title="Online Exhibits"><span>Online Exhibits</span></a>
+													</li>
+													<li id="5250e68f-36ca-4fd2-96fc-043305af04ba" class=""><a href="http://www.ohiohistory.org/exhibits/historic-site-exhibits" id="5250e68f-36ca-4fd2-96fc-043305af04ba" class="navLevel3" title="Historic Site Exhibits"><span>Historic Site Exhibits</span></a>
+													</li>
+													<li id="8cc2ee2c-0e45-417e-a197-f8e71e722c0e" class="">
+													<a href="http://www.ohiohistory.org/exhibits/past-exhibits" id="8cc2ee2c-0e45-417e-a197-f8e71e722c0e" class="navLevel3" title="Past Exhibits"><span>Past Exhibits</span></a>
+													</li>
+													<li id="45bbb05e-d13e-4b10-9669-fdf15b4390fa" class="">
+													<a href="http://www.ohiohistory.org/exhibits/visitor-studies" id="45bbb05e-d13e-4b10-9669-fdf15b4390fa" class="navLevel3" title="Visitor Studies"><span>Visitor Studies</span></a
+													>
+													</li>
+													<li id="86ee1002-fa3b-4ae0-abc8-fd5ff225ac08" class="">
+													<a href="http://www.ohiohistory.org/exhibits/traveling-exhibits" id="86ee1002-fa3b-4ae0-abc8-fd5ff225ac08" class="navLevel3" title="Traveling Exhibits"><span>Traveling Exhibits</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+													
+									<li id="collections--archives" class="link3selected"><a href="http://www.ohiohistory.org/collections--archives" class="navLevel2selected" title="Collections &amp; Archives"><span>Collections &amp; Archives</span></a>
+										<div class="level1" style="display: none;">
+											<div class="level1-inner">
+												<ul>
+													<li id="0dcd20e2-3d55-4351-ae24-1d68db1fd701" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/archaeology" id="0dcd20e2-3d55-4351-ae24-1d68db1fd701" class="navLevel3" title="Archaeology"><span>Archaeology</span></a>
+													</li>
+													<li id="0c859bfd-7094-4a51-9f77-2702a45ffe1f" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/archives-library" id="0c859bfd-7094-4a51-9f77-2702a45ffe1f" class="navLevel3" title="Archives/Library"><span>Archives/Library</span></a>
+													</li>
+													<li id="cedaf797-bb1f-40ba-a667-ecd90038f1cb" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/digital-collections--services" id="cedaf797-bb1f-40ba-a667-ecd90038f1cb" class="navLevel3" title="Digital Collections &amp; Services"><span>Digital Collections &amp; Services</span></a>
+													</li>
+													<li id="a365edbb-37c4-4056-a8fd-abf3299fe887" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/history-collections" id="a365edbb-37c4-4056-a8fd-abf3299fe887" class="navLevel3" title="History Collections"><span>History Collections</span></a>
+													</li>
+													<li id="16569ec5-7b60-4bab-a0ef-ec0d5c90ade8" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/manuscript-and-audiovisual" id="16569ec5-7b60-4bab-a0ef-ec0d5c90ade8" class="navLevel3" title="Manuscript and Audiovisual"><span>Manuscript and Audiovisual</span></a>
+													</li>
+													<li id="5b19ca72-72d5-4538-8c6c-35df4b8fec34" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/museum-and-library-services" id="5b19ca72-72d5-4538-8c6c-35df4b8fec34" class="navLevel3" title="Museum and Library Services"><span>Museum and Library Services</span></a>
+													</li>
+													<li id="51f0f1a0-7103-4c31-9fb8-a4175e9d02d2" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/natural-history" id="51f0f1a0-7103-4c31-9fb8-a4175e9d02d2" class="navLevel3" title="Natural History"><span>Natural History</span></a>
+													</li>
+													<li id="77bede8a-182e-4c6d-b921-67af2d2382dc" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/registrars-office" id="77bede8a-182e-4c6d-b921-67af2d2382dc" class="navLevel3" title="Registrars Office"><span>Registrars Office</span></a>
+													</li>
+													<li id="56d619b6-6e85-49d3-8fce-b71bacbcf38a" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/state-archives" id="56d619b6-6e85-49d3-8fce-b71bacbcf38a" class="navLevel3" title="State Archives"><span>State Archives</span></a>
+													</li>
+													<li id="2f23633a-91ec-4f3a-a7ba-234f40d5e72e" class="">
+													<a href="http://www.ohiohistory.org/collections--archives/online-collections-catalog" id="2f23633a-91ec-4f3a-a7ba-234f40d5e72e" class="navLevel3" title="Online Collections Catalog"><span>Online Collections Catalog</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+													
+									<li id="programs--events" class="link4"><a href="http://www.ohiohistory.org/programs--events" class="navLevel2" title="Programs &amp; Events"><span>Programs &amp; Events</span></a>
+										<div class="level1" style="display: none;">
+											<div class="level1-inner">
+												<ul>
+													<li id="ed0ba7aa-ba91-4b85-83fe-9c580b610850" class="">
+													<a href="http://www.ohiohistory.org/programs--events/exhibits" id="ed0ba7aa-ba91-4b85-83fe-9c580b610850" class="navLevel3" title="Exhibits"><span>Exhibits</span></a>
+													</li>
+													<li id="2212bd34-768d-4671-9c95-508f5c5f4d38" class="">
+													<a href="http://www.ohiohistoryhost.org/eventcalendar" id="2212bd34-768d-4671-9c95-508f5c5f4d38" class="navLevel3" title="Events Calendar"><span>Events Calendar</span></a>
+													</li>
+													<li id="f9e2e6b3-56b8-4241-8b9e-0cd070e1d3e3" class="">
+													<a href="http://www.ohiohistory.org/programs--events/blast-from-the-past-summer-camps" id="f9e2e6b3-56b8-4241-8b9e-0cd070e1d3e3" class="navLevel3" title="Blast from the Past Summer Camps"><span>Blast from the Past Summer Camps</span></a>
+													</li>
+													<li id="184e84b4-5c38-4ddf-913f-5370ebb0d1d0" class="">
+													<a href="http://www.ohiohistory.org/programs--events/tours" id="184e84b4-5c38-4ddf-913f-5370ebb0d1d0" class="navLevel3" title="Tours"><span>Tours</span></a>
+													</li>
+													<li id="fa039cb8-08f7-4062-92cc-cee6873ff7a0" class="">
+													<a href="http://www.ohiohistory.org/programs--events/ohio-village" id="fa039cb8-08f7-4062-92cc-cee6873ff7a0" class="navLevel3" title="Ohio Village"><span>Ohio Village</span></a>
+													</li>
+													<li id="94554cf5-b378-4c67-9116-b027f4546425" class="">
+													<a href="http://www.ohiohistory.org/programs--events/girl-scouts" id="94554cf5-b378-4c67-9116-b027f4546425" class="navLevel3" title="Girl Scouts"><span>Girl Scouts</span></a>
+													</li>
+													<li id="857efc42-d95f-4dcc-89a8-9adfe6fc4a3c" class="">
+													<a href="http://www.ohiohistory.org/programs--events/ohio-history-center" id="857efc42-d95f-4dcc-89a8-9adfe6fc4a3c" class="navLevel3" title="Ohio History Center"><span>Ohio History Center</span></a>
+													</li>
+													<li id="8a265f2c-e216-47a3-8d69-c7abbd0bb2aa" class="">
+													<a href="http://www.ohiohistory.org/programs--events/workshops" id="8a265f2c-e216-47a3-8d69-c7abbd0bb2aa" class="navLevel3" title="Workshops"><span>Workshops</span></a>
+													</li>
+													<li id="64c11952-ea3d-4f64-8591-67e39480b1f6" class="">
+													<a href="http://www.ohiohistory.org/programs--events/event-rental" id="64c11952-ea3d-4f64-8591-67e39480b1f6" class="navLevel3" title="Event Rental"><span>Event Rental</span></a>
+													</li>
+													<li id="b00c4553-0046-4d1a-af43-9d0351c332d2" class="">
+													<a href="http://www.ohiohistory.org/programs--events/big-give" id="b00c4553-0046-4d1a-af43-9d0351c332d2" class="navLevel3" title="Big Give"><span>Big Give</span></a>
+													</li>
+													<li id="5cfef6fd-4367-4904-aad2-77c1bbe39a36" class="">
+													<a href="http://www.ohiohistory.org/programs--events/holidays" id="5cfef6fd-4367-4904-aad2-77c1bbe39a36" class="navLevel3" title="Holidays"><span>Holidays</span></a>
+													</li>
+													<li id="9c133b39-9ecd-486e-9cfc-4279bd127123" class="">
+													<a href="http://www.ohiohistory.org/programs--events/black-history-month" id="9c133b39-9ecd-486e-9cfc-4279bd127123" class="navLevel3" title="Black History Month"><span>Black History Month</span></a>
+													</li>
+													<li id="37e4cb67-cd47-433c-91ae-a30867863bde" class="">
+													<a href="http://www.ohiohistory.org/programs--events/summer-events" id="37e4cb67-cd47-433c-91ae-a30867863bde" class="navLevel3" title="Summer Events"><span>Summer Events</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+													
+									<li id="education" class="link5">
+									<a href="http://www.ohiohistory.org/education" class="navLevel2" title="Education"><span>Education</span></a>
+										<div class="level1">
+											<div class="level1-inner">
+												<ul>
+													<li id="a3084ada-6c21-4a3c-bea9-fe0786d5b281" class="">
+													<a href="http://www.ohiohistory.org/education/ohio-as-america" id="a3084ada-6c21-4a3c-bea9-fe0786d5b281" class="navLevel3" title="Ohio as America"><span>Ohio as America</span></a>
+													</li>
+													<li id="7f50793f-4cf7-4e62-907a-7bf00af3241f" class="">
+													<a href="http://www.ohiohistory.org/education/outreach" id="7f50793f-4cf7-4e62-907a-7bf00af3241f" class="navLevel3" title="Outreach"><span>Outreach</span></a>
+													</li>
+													<li id="c067c73f-9e6b-46fe-b1bb-d75f3f57c82f" class="">
+													<a href="http://www.ohiohistory.org/education/museum-in-a-box" id="c067c73f-9e6b-46fe-b1bb-d75f3f57c82f" class="navLevel3" title="Museum in a Box"><span>Museum in a Box</span></a>
+													</li>
+													<li id="95da54ef-2e4a-433a-aad8-98a6284fe4bf" class="">
+													<a href="http://www.ohiohistory.org/education/national-history-day-in-ohio" id="95da54ef-2e4a-433a-aad8-98a6284fe4bf" class="navLevel3" title="National History Day in Ohio"><span>National History Day in Ohio</span></a>
+													</li>
+													<li id="65ca5acf-788a-4e37-aa76-2d8d54a8111f" class="">
+													<a href="http://www.ohiohistory.org/education/field-trips" id="65ca5acf-788a-4e37-aa76-2d8d54a8111f" class="navLevel3" title="Field Trips"><span>Field Trips</span></a>
+													</li>
+													<li id="3b8e7829-a75f-478c-b450-08a2f2c549b6" class="">
+													<a href="http://www.ohiohistory.org/education/professional-development" id="3b8e7829-a75f-478c-b450-08a2f2c549b6" class="navLevel3" title="Professional Development"><span>Professional Development</span></a>
+													</li>
+													<li id="54abf719-311d-4e9d-b6d8-257f73c35354" class="">
+													<a href="http://www.ohiohistory.org/education/educator-resources" id="54abf719-311d-4e9d-b6d8-257f73c35354" class="navLevel3" title="Educator Resources"><span>Educator Resources</span></a>
+													</li>
+													<li id="d43e620d-b738-43a9-bf66-73434520e778" class="">
+													<a href="http://www.ohiohistory.org/education/distance-learning" id="d43e620d-b738-43a9-bf66-73434520e778" class="navLevel3" title="Distance Learning"><span>Distance Learning</span></a>
+													</li>
+													<li id="6a825cc6-1ebf-4f98-adc6-2426a3bbd7fb" class="">
+													<a href="http://www.ohiohistory.org/education/history-to-go-van" id="6a825cc6-1ebf-4f98-adc6-2426a3bbd7fb" class="navLevel3" title="History to Go Van"><span>History to Go Van</span></a>
+													</li>
+													<li id="b3d92c5a-b8c9-4029-b04b-94a0308cde76" class="">
+													<a href="http://www.ohiohistory.org/education/blackboard-mailing" id="b3d92c5a-b8c9-4029-b04b-94a0308cde76" class="navLevel3" title="Blackboard Mailing"><span>Blackboard Mailing</span></a>
+													</li>
+													<li id="f508270e-18e8-4d60-a214-c1f31a6d2668" class="">
+													<a href="http://www.ohiohistory.org/education/founding-documents" id="f508270e-18e8-4d60-a214-c1f31a6d2668" class="navLevel3" title="Founding Documents"><span>Founding Documents</span></a>
+													</li>
+													<li id="f335d11a-3db7-49a9-9843-7ae29d3f8783" class="">
+													<a href="http://www.ohiohistory.org/education/buckeye-council-for-history-education" id="f335d11a-3db7-49a9-9843-7ae29d3f8783" class="navLevel3" title="Buckeye Council for History Education"><span>Buckeye Council for History Education</span></a>
+													</li>
+													<li id="a0a2c340-ddf8-4bc2-bbee-43a4a33d47c0" class="">
+													<a href="http://www.ohiohistorycentral.org/" id="a0a2c340-ddf8-4bc2-bbee-43a4a33d47c0" class="navLevel3" title="Ohio History Central"><span>Ohio History Central</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+													
+									<li id="local-history-office" class="link6"><a href="http://www.ohiohistory.org/local-history-office" class="navLevel2" title="Local History Office"><span>Local History Office</span></a>
+										<div class="level1" style="display: none;">
+											<div class="level1-inner">
+												<ul>
+													<li id="59909c87-d088-4784-9dc7-0f0774b52cdf" class="">
+														<a href="http://www.ohiohistory.org/local-history-office/americorps" id="59909c87-d088-4784-9dc7-0f0774b52cdf" class="navLevel3" title="AmeriCorps"><span>AmeriCorps</span></a>
+													</li>
+													<li id="3fd1a9f4-950a-4085-b9d3-2cd2995b3f93" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/funding-opportunities" id="3fd1a9f4-950a-4085-b9d3-2cd2995b3f93" class="navLevel3" title="Funding Opportunities"><span>Funding Opportunities</span></a>
+													</li>
+													<li id="5e448282-7ef2-4431-8874-b012c892d21d" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/professional-development" id="5e448282-7ef2-4431-8874-b012c892d21d" class="navLevel3" title="Professional Development"><span>Professional Development</span></a>
+													</li>
+													<li id="864c0d3d-3102-450a-bb56-88a36a6a63f9" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/commemorations" id="864c0d3d-3102-450a-bb56-88a36a6a63f9" class="navLevel3" title="Commemorations"><span>Commemorations</span></a>
+													</li>
+													<li id="c6c44c9c-377a-499d-af3a-83329cc31a70" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/ohio-local-history-alliance" id="c6c44c9c-377a-499d-af3a-83329cc31a70" class="navLevel3" title="Ohio Local History Alliance"><span>Ohio Local History Alliance</span></a>
+													</li>
+													<li id="17d7feda-5e76-430e-996e-2ce5c8c7a49b" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/historical-markers" id="17d7feda-5e76-430e-996e-2ce5c8c7a49b" class="navLevel3" title="Historical Markers"><span>Historical Markers</span></a>
+													</li>
+													<li id="2b974344-31f3-4424-8bb7-23d3a2c73bb8" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/lho-services" id="2b974344-31f3-4424-8bb7-23d3a2c73bb8" class="navLevel3" title="LHO Services"><span>LHO Services</span></a>
+													</li>
+													<li id="6b5bf932-63d3-40db-9ae8-6f9b45959502" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/other-service-organizations" id="6b5bf932-63d3-40db-9ae8-6f9b45959502" class="navLevel3" title="Other Service Organizations"><span>Other Service Organizations</span></a>
+													</li>
+													<li id="ddb37b4b-3bc1-4131-b123-31cfadcdc17a" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/digitization" id="ddb37b4b-3bc1-4131-b123-31cfadcdc17a" class="navLevel3" title="Digitization"><span>Digitization</span></a>
+													</li>
+													<li id="a48d161e-94db-4bf1-a37b-5b3c04244858" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/standards-and-guidelines" id="a48d161e-94db-4bf1-a37b-5b3c04244858" class="navLevel3" title="Standards and Guidelines"><span>Standards and Guidelines</span></a>
+													</li>
+													<li id="f9d08e06-fe85-481e-9c69-2c4b824c0682" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/staff" id="f9d08e06-fe85-481e-9c69-2c4b824c0682" class="navLevel3" title="Staff"><span>Staff</span></a>
+													</li>
+													<li id="f4b9e714-c73f-4c01-8773-bb0ca462074e" class="">
+													<a href="http://www.ohiohistory.org/local-history-office/about-lho" id="f4b9e714-c73f-4c01-8773-bb0ca462074e" class="navLevel3" title="About LHO"><span>About LHO</span></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+													
+									<li id="state-historic-preservation-office" class="link7">
+									<a href="http://www.ohiohistory.org/state-historic-preservation-office" class="navLevel2" title="State Historic Preservation Office"><span>State Historic Preservation Office</span></a>
+										<div class="level1" style="display: none;">
+											<div class="level1-inner">
+												<ul>
+													<li id="bc63dadd-7ac9-4d7f-85ea-9e0bea825c03" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/building-doctor" id="bc63dadd-7ac9-4d7f-85ea-9e0bea825c03" class="navLevel3" title="Building Doctor"><span>Building Doctor</span></a>
+														</li>
+														<li id="078d8418-2922-470f-8291-c9e229c574aa" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/certified-local-governments" id="078d8418-2922-470f-8291-c9e229c574aa" class="navLevel3" title="Certified Local Governments"><span>Certified Local Governments</span></a>
+														</li>
+														<li id="0497a69c-8db6-45f8-b695-a40aecfe915f" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/federal-and-state-reviews" id="0497a69c-8db6-45f8-b695-a40aecfe915f" class="navLevel3" title="Federal and State Reviews"><span>Federal and State Reviews</span></a>
+														</li>
+														<li id="4dd2b755-3120-477b-8600-f407e6f5ba15" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/services-and-fees" id="4dd2b755-3120-477b-8600-f407e6f5ba15" class="navLevel3" title="Services and Fees"><span>Services and Fees</span></a>
+														</li>
+														<li id="b3abc951-7a4e-4d04-84ad-46822220a09c" class="">
+															<a href="http://www.ohiohistory.org/state-historic-preservation-office/grants-and-funding-sources" id="b3abc951-7a4e-4d04-84ad-46822220a09c" class="navLevel3" title="Grants and Funding Sources"><span>Grants and Funding Sources</span></a>
+														</li>
+														<li id="2360cb7e-dac2-4988-8d96-2f266f2bf59f" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/historic-preservation-planning" id="2360cb7e-dac2-4988-8d96-2f266f2bf59f" class="navLevel3" title="Historic Preservation Planning"><span>Historic Preservation Planning</span></a>
+														</li>
+														<li id="cbcbe15c-65b1-4dcf-a81d-c685a4b92bf3" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/national-register-of-historic-places" id="cbcbe15c-65b1-4dcf-a81d-c685a4b92bf3" class="navLevel3" title="National Register of Historic Places"><span>National Register of Historic Places</span></a>
+														</li>
+														<li id="18d9fb03-c9e2-4c2d-a172-86565bbfc46d" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/state-historic-preservation-office-awards" id="18d9fb03-c9e2-4c2d-a172-86565bbfc46d" class="navLevel3" title="State Historic Preservation Office Awards"><span>State Historic Preservation Office Awards</span></a>
+														</li>
+														<li id="ec2f6ab5-afc6-4d3b-94a0-a21cd017ba29" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/online-mapping-system" id="ec2f6ab5-afc6-4d3b-94a0-a21cd017ba29" class="navLevel3" title="Online Mapping System"><span>Online Mapping System</span></a>
+														</li>
+														<li id="f2c78864-e585-40f2-b2c7-38c9b634515d" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/preservation-where-you-live" id="f2c78864-e585-40f2-b2c7-38c9b634515d" class="navLevel3" title="Preservation Where You Live"><span>Preservation Where You Live</span></a>
+														</li>
+														<li id="cf7f2dfe-de3f-41a3-91d5-62d8ecc701ee" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/survey-and-inventory" id="cf7f2dfe-de3f-41a3-91d5-62d8ecc701ee" class="navLevel3" title="Survey and Inventory"><span>Survey and Inventory</span></a>
+														</li>
+														<li id="76400b3d-2e58-437c-bbd3-09074f0e63c7" class="">
+														<a href="http://www.ohiohistory.orghttp://www.ohiohistory.org/state-historic-preservation-office/tax-incentives-for-historic-preservation" id="76400b3d-2e58-437c-bbd3-09074f0e63c7" class="navLevel3" title="Tax Incentives for Historic Preservation"><span>Tax Incentives for Historic Preservation</span></a>
+														</li>
+														<li id="9ec5bbed-7d09-4b44-8e54-c98163a6e65a" class="">
+														<a href="http://www.ohiohistory.org/state-historic-preservation-office/about-us" id="9ec5bbed-7d09-4b44-8e54-c98163a6e65a" class="navLevel3" title="About Us"><span>About Us</span></a>
+														</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+													
+									<li id="publications" class="link8">
+										<a href="http://www.ohiohistory.org/publications" class="navLevel2" title="Publications"><span>Publications</span></a>
+										<div class="level1" style="display: none;">
+											<div class="level1-inner">
+												<ul>
+													<li id="76974e79-180f-4cf5-9470-58ee5d13e7be" class="">
+														<a href="http://www.ohiohistory.org/publications/timeline" id="76974e79-180f-4cf5-9470-58ee5d13e7be" class="navLevel3" title="TIMELINE Magazine"><span>TIMELINE Magazine</span></a>
+													</li>
+													<li id="d4686acc-707d-47bc-bd33-8acc87c98949" class="">
+														<a href="http://www.ohiohistory.org/publications/ohio-history" id="d4686acc-707d-47bc-bd33-8acc87c98949" class="navLevel3" title="Ohio History"><span>Ohio History</span></a>
+													</li>
+													<li id="dcadb9cb-bdef-43c3-8ade-f60b40064244" class="">
+													<a href="http://www.ohiohistory.org/publications/echoes" id="dcadb9cb-bdef-43c3-8ade-f60b40064244" class="navLevel3" title="Echoes"><span>Echoes</span></a>
+													</li>
+													<li id="2442a55c-fc97-4bd6-8077-cedd5e99f2c4" class="">
+													<a href="http://www.ohiohistory.org/publications/ohio-histore-news/2014" id="2442a55c-fc97-4bd6-8077-cedd5e99f2c4" class="navLevel3" title="Ohio Histore-news"><span>Ohio Histore-news</span></a>
+													</li>
+													<li id="0456e15c-2af7-45a2-945e-44f9cc633fd7" class="">
+													<a href="http://www.ohiohistory.org/publications/email-lists" id="0456e15c-2af7-45a2-945e-44f9cc633fd7" class="navLevel3" title="E-Newsletter Sign-Up"><span>E-Newsletter Sign-Up</span></a>	
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+						
+						</div>
+						<!--<div id="search">
+							<label for="search"></label>
+							<input name="ctl11$ctlHeader$txtSearch" type="text" id="ctl11_ctlHeader_txtSearch" class="input-text">
+							<a id="ctl11_ctlHeader_btnSearch" class="submit-button" href="javascript:__doPostBack('ctl11$ctlHeader$btnSearch','')">Go</a>					
+						</div>!-->
+						<ul class="social-media-links-top">
+								<li id="enews-top"><a href="http://www.ohiohistory.org/e-news">Histore-news</a></li>
+								<li id="facebook-top"><a href="http://www.facebook.com/pages/Ohio-Historical-Society/22003234344">Facebook</a></li>
+								<li id="twitter-top"><a href="https://twitter.com/ohiohistory">Twitter</a></li>
+								<li id="youtube-top"><a href="http://www.youtube.com/ohiohistory">YouTube</a></li>
+							</ul>
+						
+						 <!--Drop down Quick Links Menu!-->
+						<select name="quick-links" onchange="location = this.options[this.selectedIndex].value;" id="quick-links">
+							<option value="" selected="">Quick Links</option>
+							<option value="http://www.ohiohistory.org/state-historic-preservation-office//building-doctor" target="_blank">Building Doctor</option>
+							<option value="http://www.ohiohistory.org/ohio-historic-preservation-office/certified-local-governments" target="_blank">Certified Local Government</option>
+							<option value="http://www.creativelearningfactory.org/" target="_blank">Creative Learning Factory</option>
+							<option value="http://ohsweb.ohiohistory.org/death" target="_blank">Death Certificate Index</option>
+							<option value="http://www.ohiohistory.org/museums-and-historic-sites/historic-sites--facilities-projects" target="_blank">Historic Sites &amp; Facilities Projects</option>
+							<option value="http://www.ohiohistory.org/collections--archives/state-archives/lgrp-home" target="_blank">Local Government Records Program</option>
+							<option value="http://www.ohioasamerica.org/" target="_blank">Ohio As America Textbook</option>
+							<option value="http://www.ohiocivilwar150.org/" target="_blank">Ohio Civil War 150</option>
+							<option value="http://www.ohiohistory.org/local-history-office/historical-markers" target="_blank">Ohio Historical Markers</option>
+							<option value="http://www.ohiomemory.org" target="_blank">Ohio Memory</option>
+							<option value="http://ohsweb.ohiohistory.org/ohiopix" target="_blank">OhioPix</option>
+							<option value="http://www.ohiohistory.org/occ/" target="_blank">Online Collections Catalog</option>
+							<option value="http://www.ohiohistory.org/collections--archives/state-archives" target="_blank">Records Retention &amp; Disposition</option>
+							<option value="http://www.ohiohistory.org/statehoodday" target="_blank">Statehood Day</option>
+						</select>
+						<ul id="nav-quicklinks">
+							<li id="nav-donate"><a href="http://www.ohiohistory.org/donate">Give</a></li>
+							<li id="nav-join"><a href="http://www.ohiohistory.org/membership" onclick="pageTracker._trackPageview('http://www.ohiohistory.org/membership/topButton.html');">Join</a></li>
+							<li id="nav-shop"><a href="http://www.ohiohistorystore.com">Shop</a></li>
+						</ul>
 				</div>
-				<div id="nav-audience">
-					<ul>
-						<li class="first-child"><a href="http://www.ohiohistory.org/teacher">Teacher</a></li>
-						<li><a href="http://www.ohiohistory.org/history-geek">History Geek</a></li>
-						<li><a href="http://www.ohiohistory.org/kid">Kid</a></li>
-						<li class="last-child"><a href="http://www.ohiohistory.org/family">Family</a></li>
-					</ul>
-				</div>
-				<div id="nav-main">
-					<!--?xml version="1.0" encoding="utf-16"?--><ul class="mainMenu" id="topNav"><li id="museums-and-historic-sites" class="link1"><a href="http://www.ohiohistory.org/museums-and-historic-sites" class="navLevel2" title="Museums &amp; Historic Sites"><span>Museums &amp; Historic Sites</span></a><div class="level1" style="display: none;"><div class="level1-inner"><ul><li id="f333c4bb-b6ed-43df-b464-cbbc0e72ae86" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name" id="f333c4bb-b6ed-43df-b464-cbbc0e72ae86" class="navLevel3" title="Museum &amp; Historic Sites by Name"><span>Museum &amp; Historic Sites by Name</span></a><div class="level1"><div class="level1-inner"><ul><li id="38bd3248-8a72-449c-bfd9-67de3e342fd1" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/adena-mansion" id="38bd3248-8a72-449c-bfd9-67de3e342fd1" class="navLevel4" title="Adena Mansion"><span>Adena Mansion</span></a></li><li id="13a3942a-e68f-4f02-8d7f-a10712996553" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/armstrong-air-and-space" id="13a3942a-e68f-4f02-8d7f-a10712996553" class="navLevel4" title="Armstrong Air and Space"><span>Armstrong Air and Space</span></a></li><li id="1ac9bad0-8ac4-4d9d-82cc-84ae3ddb86f0" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/big-bottom" id="1ac9bad0-8ac4-4d9d-82cc-84ae3ddb86f0" class="navLevel4" title="Big Bottom"><span>Big Bottom</span></a></li><li id="7882faa3-72f0-46b1-8a97-5680f42a6c52" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/buckeye-furnace" id="7882faa3-72f0-46b1-8a97-5680f42a6c52" class="navLevel4" title="Buckeye Furnace"><span>Buckeye Furnace</span></a></li><li id="4a89b0ed-88e1-4ee4-8c49-34dfe1925b64" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/buffington-island" id="4a89b0ed-88e1-4ee4-8c49-34dfe1925b64" class="navLevel4" title="Buffington Island"><span>Buffington Island</span></a></li><li id="1b02868a-ec15-4227-9006-bd1d5c652415" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/campus-martius" id="1b02868a-ec15-4227-9006-bd1d5c652415" class="navLevel4" title="Campus Martius"><span>Campus Martius</span></a></li><li id="56efd4fa-05a3-428f-b8fd-bc6e5d6bfe3f" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/cedar-bog" id="56efd4fa-05a3-428f-b8fd-bc6e5d6bfe3f" class="navLevel4" title="Cedar Bog"><span>Cedar Bog</span></a></li><li id="10123fbd-d7c9-4880-b21d-21f01e451cd5" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/cooke-house" id="10123fbd-d7c9-4880-b21d-21f01e451cd5" class="navLevel4" title="Cooke House"><span>Cooke House</span></a></li><li id="cbe87a6e-57df-4581-8c79-1da36e86cf01" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/custer-monument" id="cbe87a6e-57df-4581-8c79-1da36e86cf01" class="navLevel4" title="Custer Monument"><span>Custer Monument</span></a></li><li id="46ed4674-b8ec-42bf-ae40-20de03576c56" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/davis-memorial" id="46ed4674-b8ec-42bf-ae40-20de03576c56" class="navLevel4" title="Davis Memorial"><span>Davis Memorial</span></a></li><li id="63d6418e-38fb-446d-97ca-8ed2337c77a6" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/fallen-timbers" id="63d6418e-38fb-446d-97ca-8ed2337c77a6" class="navLevel4" title="Fallen Timbers"><span>Fallen Timbers</span></a></li><li id="543f6108-aad2-4b32-a1dd-d6018cdaf7f4" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/flint-ridge" id="543f6108-aad2-4b32-a1dd-d6018cdaf7f4" class="navLevel4" title="Flint Ridge"><span>Flint Ridge</span></a></li><li id="97727d45-3328-473a-b8e9-85f54a213e97" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/fort-amanda" id="97727d45-3328-473a-b8e9-85f54a213e97" class="navLevel4" title="Fort Amanda"><span>Fort Amanda</span></a></li><li id="a70c8f20-22c5-4f10-bee6-fdf0d777c957" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/fort-ancient" id="a70c8f20-22c5-4f10-bee6-fdf0d777c957" class="navLevel4" title="Fort Ancient"><span>Fort Ancient</span></a></li><li id="62067b62-0fed-44d9-960f-8e5a5a1af408" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/fort-hill" id="62067b62-0fed-44d9-960f-8e5a5a1af408" class="navLevel4" title="Fort Hill"><span>Fort Hill</span></a></li><li id="365c4dfc-dc87-4086-b3d4-3db71182b175" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/fort-jefferson" id="365c4dfc-dc87-4086-b3d4-3db71182b175" class="navLevel4" title="Fort Jefferson"><span>Fort Jefferson</span></a></li><li id="80813fb6-cd5f-4cf7-8556-3ad5addebca1" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/fort-laurens" id="80813fb6-cd5f-4cf7-8556-3ad5addebca1" class="navLevel4" title="Fort Laurens"><span>Fort Laurens</span></a></li><li id="84807a02-8a97-4ebc-81c5-630f44fbee42" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/fort-meigs" id="84807a02-8a97-4ebc-81c5-630f44fbee42" class="navLevel4" title="Fort Meigs"><span>Fort Meigs</span></a></li><li id="1fecec0a-11ba-4466-9a29-d7f06ab41351" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/fort-recovery" id="1fecec0a-11ba-4466-9a29-d7f06ab41351" class="navLevel4" title="Fort Recovery"><span>Fort Recovery</span></a></li><li id="cb313f7c-8b31-40bb-9d25-4a970e567613" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/glacial-grooves" id="cb313f7c-8b31-40bb-9d25-4a970e567613" class="navLevel4" title="Glacial Grooves"><span>Glacial Grooves</span></a></li><li id="59999e44-e4e1-4504-a34c-4f27e263896f" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/glendower" id="59999e44-e4e1-4504-a34c-4f27e263896f" class="navLevel4" title="Glendower"><span>Glendower</span></a></li><li id="46e03e2a-a0a4-4d0a-925e-9e36447f6d16" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/grant-birthplace" id="46e03e2a-a0a4-4d0a-925e-9e36447f6d16" class="navLevel4" title="Grant Birthplace"><span>Grant Birthplace</span></a></li><li id="26910ff6-d0ca-4c5b-b5b3-015f650f67b6" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/grant-boyhood-home" id="26910ff6-d0ca-4c5b-b5b3-015f650f67b6" class="navLevel4" title="Grant Boyhood Home"><span>Grant Boyhood Home</span></a></li><li id="ce94efeb-4341-46e6-bf78-b3e6abef95e8" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/grant-schoolhouse" id="ce94efeb-4341-46e6-bf78-b3e6abef95e8" class="navLevel4" title="Grant Schoolhouse"><span>Grant Schoolhouse</span></a></li><li id="ff37dd7b-8b01-443a-90eb-15b136915d75" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/great-circle-earthworks" id="ff37dd7b-8b01-443a-90eb-15b136915d75" class="navLevel4" title="Great Circle Earthworks"><span>Great Circle Earthworks</span></a></li><li id="c1e42907-ee87-4e80-8cff-a8ae793d6d8d" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/hanby-house" id="c1e42907-ee87-4e80-8cff-a8ae793d6d8d" class="navLevel4" title="Hanby House"><span>Hanby House</span></a></li><li id="d2c41c7e-39ff-4f83-a68b-dacd59116644" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/harding-home" id="d2c41c7e-39ff-4f83-a68b-dacd59116644" class="navLevel4" title="Harding Home"><span>Harding Home</span></a></li><li id="15d64588-51c7-4911-8f63-0bdc0e97beb5" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/harding-memorial" id="15d64588-51c7-4911-8f63-0bdc0e97beb5" class="navLevel4" title="Harding Memorial"><span>Harding Memorial</span></a></li><li id="63a7661b-b0b1-45f7-b2a9-bbc7dfd6f6fc" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/harriet-beecher-stowe-house" id="63a7661b-b0b1-45f7-b2a9-bbc7dfd6f6fc" class="navLevel4" title="Harriet Beecher Stowe House"><span>Harriet Beecher Stowe House</span></a></li><li id="23ecd3b5-20a4-44f3-92b0-d6ba2c30ce69" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/harrison-tomb" id="23ecd3b5-20a4-44f3-92b0-d6ba2c30ce69" class="navLevel4" title="Harrison Tomb"><span>Harrison Tomb</span></a></li><li id="6b8f12ee-be10-4e19-9f57-124cbd8da641" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/hayes-presidential-center" id="6b8f12ee-be10-4e19-9f57-124cbd8da641" class="navLevel4" title="Hayes Presidential Center"><span>Hayes Presidential Center</span></a></li><li id="ccbc5388-7433-4929-81eb-7b55037f544a" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/indian-mill" id="ccbc5388-7433-4929-81eb-7b55037f544a" class="navLevel4" title="Indian Mill"><span>Indian Mill</span></a></li><li id="cde3d4e9-78a7-44a2-ae34-6505550b22b3" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/johnston-farm--indian-agency" id="cde3d4e9-78a7-44a2-ae34-6505550b22b3" class="navLevel4" title="Johnston Farm &amp; Indian Agency"><span>Johnston Farm &amp; Indian Agency</span></a></li><li id="b9fefe85-a4a9-4147-bc53-58c25e65f5a0" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/inscription-rock" id="b9fefe85-a4a9-4147-bc53-58c25e65f5a0" class="navLevel4" title="Inscription Rock"><span>Inscription Rock</span></a></li><li id="23ab5a25-2ac4-4cfb-bd60-e0075363ecf9" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/leo-petroglyph" id="23ab5a25-2ac4-4cfb-bd60-e0075363ecf9" class="navLevel4" title="Leo Petroglyph"><span>Leo Petroglyph</span></a></li><li id="6375942e-0f12-40e1-934e-76a9ce62298e" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/lockington-locks" id="6375942e-0f12-40e1-934e-76a9ce62298e" class="navLevel4" title="Lockington Locks"><span>Lockington Locks</span></a></li><li id="19f5e9e5-40c3-4b26-9bad-9e745736e160" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/logan-elm" id="19f5e9e5-40c3-4b26-9bad-9e745736e160" class="navLevel4" title="Logan Elm"><span>Logan Elm</span></a></li><li id="5fe2a398-ba90-45e6-82f2-01b8f181f082" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/mccook-house" id="5fe2a398-ba90-45e6-82f2-01b8f181f082" class="navLevel4" title="McCook House"><span>McCook House</span></a></li><li id="8dcc799c-ff39-4074-810a-ed51ae0da5f6" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/mccook-monument" id="8dcc799c-ff39-4074-810a-ed51ae0da5f6" class="navLevel4" title="McCook Monument"><span>McCook Monument</span></a></li><li id="b3d6cbc5-d42e-410f-b6a7-a2eae525a8db" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/miamisburg-mound" id="b3d6cbc5-d42e-410f-b6a7-a2eae525a8db" class="navLevel4" title="Miamisburg Mound"><span>Miamisburg Mound</span></a></li><li id="846586fa-3c65-4ada-8633-ab8ffcf15b83" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/museum-of-ceramics" id="846586fa-3c65-4ada-8633-ab8ffcf15b83" class="navLevel4" title="Museum of Ceramics"><span>Museum of Ceramics</span></a></li><li id="cda6fef6-d4f3-4470-b91c-788b20dd5f45" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/national-afro-american-museum--cultural-center" id="cda6fef6-d4f3-4470-b91c-788b20dd5f45" class="navLevel4" title="National Afro-American Museum &amp; Cultural Center"><span>National Afro-American Museum &amp; Cultural Center</span></a></li><li id="5746016c-c1ff-4c51-8ccd-bb9dd7e2c6b4" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/national-road" id="5746016c-c1ff-4c51-8ccd-bb9dd7e2c6b4" class="navLevel4" title="National Road"><span>National Road</span></a></li><li id="32e15f9d-c833-4b45-90b1-da40e13a47ab" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/newark-earthworks" id="32e15f9d-c833-4b45-90b1-da40e13a47ab" class="navLevel4" title="Newark Earthworks"><span>Newark Earthworks</span></a></li><li id="3685ecad-dcd6-48c6-b4f8-02105dd518f6" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/octagon-earthworks" id="3685ecad-dcd6-48c6-b4f8-02105dd518f6" class="navLevel4" title="Octagon Earthworks"><span>Octagon Earthworks</span></a></li><li id="2c371f45-e52a-479d-ae3a-8603e728720e" class=""><a href="http://www.ohiohistory.org/home/ohio-history-center" id="2c371f45-e52a-479d-ae3a-8603e728720e" class="navLevel4" title="Ohio History Center"><span>Ohio History Center</span></a></li><li id="0fb74e27-1ae1-4a78-89c3-4b88964a36fb" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/ohio-river-museum" id="0fb74e27-1ae1-4a78-89c3-4b88964a36fb" class="navLevel4" title="Ohio River Museum"><span>Ohio River Museum</span></a></li><li id="45c4b9e7-0891-4fe3-bcb4-b9d341a68af4" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/ohio-village" id="45c4b9e7-0891-4fe3-bcb4-b9d341a68af4" class="navLevel4" title="Ohio Village"><span>Ohio Village</span></a></li><li id="56412629-fd6c-4392-8f1e-78d066542258" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/our-house" id="56412629-fd6c-4392-8f1e-78d066542258" class="navLevel4" title="Our House"><span>Our House</span></a></li><li id="bd3a6920-2dd2-4988-a61e-f1d693f4a60c" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/paul-laurence-dunbar-house" id="bd3a6920-2dd2-4988-a61e-f1d693f4a60c" class="navLevel4" title="Paul Laurence Dunbar House"><span>Paul Laurence Dunbar House</span></a></li><li id="a4d887f6-c1dd-4f48-84e6-c31da2e51ac6" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/quaker-meeting-house" id="a4d887f6-c1dd-4f48-84e6-c31da2e51ac6" class="navLevel4" title="Quaker Meeting House"><span>Quaker Meeting House</span></a></li><li id="0e2c1138-9874-4816-a5b5-58a6388049d7" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/rankin-house" id="0e2c1138-9874-4816-a5b5-58a6388049d7" class="navLevel4" title="Rankin House"><span>Rankin House</span></a></li><li id="a72d726a-b7c6-4f00-a0df-7c3cd9d9a081" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/schoenbrunn" id="a72d726a-b7c6-4f00-a0df-7c3cd9d9a081" class="navLevel4" title="Schoenbrunn"><span>Schoenbrunn</span></a></li><li id="e7785d20-a66e-4d0a-8924-b38856077b44" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/seip-mound" id="e7785d20-a66e-4d0a-8924-b38856077b44" class="navLevel4" title="Seip Mound"><span>Seip Mound</span></a></li><li id="392d5f7d-f97d-401b-a54b-02ca8ff61c73" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/serpent-mound" id="392d5f7d-f97d-401b-a54b-02ca8ff61c73" class="navLevel4" title="Serpent Mound"><span>Serpent Mound</span></a></li><li id="560e004b-eba5-4b64-b3a4-0351513b9025" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/shaker-historical-museum" id="560e004b-eba5-4b64-b3a4-0351513b9025" class="navLevel4" title="Shaker Historical Museum"><span>Shaker Historical Museum</span></a></li><li id="1a1ef3aa-fd2f-44c2-9a61-236e7586084b" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/shrum-mound-campbell-park" id="1a1ef3aa-fd2f-44c2-9a61-236e7586084b" class="navLevel4" title="Shrum Mound/Campbell Park"><span>Shrum Mound/Campbell Park</span></a></li><li id="168e44f2-cb24-437b-b30c-000377875143" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/story-mound" id="168e44f2-cb24-437b-b30c-000377875143" class="navLevel4" title="Story Mound"><span>Story Mound</span></a></li><li id="6e7a68b4-a717-4ce6-b711-49aa0b6b234d" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/tallmadge-church" id="6e7a68b4-a717-4ce6-b711-49aa0b6b234d" class="navLevel4" title="Tallmadge Church"><span>Tallmadge Church</span></a></li><li id="42c758bb-ac6c-472e-8e9d-a08d8d2fb7f1" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/wahkeena" id="42c758bb-ac6c-472e-8e9d-a08d8d2fb7f1" class="navLevel4" title="Wahkeena"><span>Wahkeena</span></a></li><li id="86cb7cff-cc40-4d99-a9b1-25810064f893" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/wright-earthworks" id="86cb7cff-cc40-4d99-a9b1-25810064f893" class="navLevel4" title="Wright Earthworks"><span>Wright Earthworks</span></a></li><li id="ca5dcc88-5e68-4c76-8d04-30452c8c303d" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/youngstown" id="ca5dcc88-5e68-4c76-8d04-30452c8c303d" class="navLevel4" title="Youngstown"><span>Youngstown</span></a></li><li id="bf7c4ede-f5e3-4160-ac63-d15e4b2f41b3" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-name/zoar-village" id="bf7c4ede-f5e3-4160-ac63-d15e4b2f41b3" class="navLevel4" title="Zoar Village"><span>Zoar Village</span></a></li></ul></div></div></li><li id="69daba0a-2b3a-4a4f-8cb9-cb35e2a7411c" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic" id="69daba0a-2b3a-4a4f-8cb9-cb35e2a7411c" class="navLevel3" title="Museum &amp; Historic Sites by Topic"><span>Museum &amp; Historic Sites by Topic</span></a><div class="level1"><div class="level1-inner"><ul><li id="66afa56a-e9b7-4849-824c-d03b204c3a82" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/transportation" id="66afa56a-e9b7-4849-824c-d03b204c3a82" class="navLevel4" title="Transportation"><span>Transportation</span></a></li><li id="e7670eeb-6791-4b06-9b98-014a7e005fb2" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/african-american" id="e7670eeb-6791-4b06-9b98-014a7e005fb2" class="navLevel4" title="African American"><span>African American</span></a></li><li id="1fcf879d-7c36-48f6-99ee-2ff5eeb8a1f6" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/air-space" id="1fcf879d-7c36-48f6-99ee-2ff5eeb8a1f6" class="navLevel4" title="Air Space"><span>Air Space</span></a></li><li id="b2608d87-be5e-480f-b6e9-b23c44037d9a" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/arts" id="b2608d87-be5e-480f-b6e9-b23c44037d9a" class="navLevel4" title="Arts"><span>Arts</span></a></li><li id="dca70d04-25ed-4081-8f0e-c3b2c5bb023e" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/civil-war" id="dca70d04-25ed-4081-8f0e-c3b2c5bb023e" class="navLevel4" title="Civil War"><span>Civil War</span></a></li><li id="021f20b7-9a9c-4192-9e3b-e197773b1feb" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/historichouses" id="021f20b7-9a9c-4192-9e3b-e197773b1feb" class="navLevel4" title="HistoricHouses"><span>HistoricHouses</span></a></li><li id="e416e665-1874-4407-a756-59d041fe6589" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/industry--labor" id="e416e665-1874-4407-a756-59d041fe6589" class="navLevel4" title="Industry &amp; Labor"><span>Industry &amp; Labor</span></a></li><li id="70c226b9-29e2-4c47-80e4-c657044f228f" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/military" id="70c226b9-29e2-4c47-80e4-c657044f228f" class="navLevel4" title="Military"><span>Military</span></a></li><li id="4a344d14-a788-444c-92d0-fc9d93eb239b" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/native-american-history" id="4a344d14-a788-444c-92d0-fc9d93eb239b" class="navLevel4" title="Native American History"><span>Native American History</span></a></li><li id="439dbb5e-97f8-489c-90f6-b801ae30db5c" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/nature" id="439dbb5e-97f8-489c-90f6-b801ae30db5c" class="navLevel4" title="Nature"><span>Nature</span></a></li><li id="09af7999-b096-4c53-be07-247dc2c776e5" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/presidents--politics" id="09af7999-b096-4c53-be07-247dc2c776e5" class="navLevel4" title="Presidents &amp; Politics"><span>Presidents &amp; Politics</span></a></li><li id="ac0517f5-db9b-4523-aaa1-cc1148936f3a" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-topic/settlement--statehood" id="ac0517f5-db9b-4523-aaa1-cc1148936f3a" class="navLevel4" title="Settlement &amp; Statehood"><span>Settlement &amp; Statehood</span></a></li></ul></div></div></li><li id="6376006e-4295-46e6-9f7c-9237d3c68a6b" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museum--historic-sites-by-location" id="6376006e-4295-46e6-9f7c-9237d3c68a6b" class="navLevel3" title="Museum &amp; Historic Sites by Location"><span>Museum &amp; Historic Sites by Location</span></a></li><li id="9c4f7097-2d3f-4347-a559-0cb3410878b7" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/museums--historic-sites-by-region" id="9c4f7097-2d3f-4347-a559-0cb3410878b7" class="navLevel3" title="Museums &amp; Historic Sites by Region"><span>Museums &amp; Historic Sites by Region</span></a></li><li id="f2c9c665-ca0b-4d0a-87d2-cb26cf1a0595" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/passport-program" id="f2c9c665-ca0b-4d0a-87d2-cb26cf1a0595" class="navLevel3" title="Passport Program"><span>Passport Program</span></a></li><li id="da2eca56-3921-4074-b8d2-af110dea0d1c" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/blue-star-museums--historic-sites" id="da2eca56-3921-4074-b8d2-af110dea0d1c" class="navLevel3" title="Blue Star Museums &amp; Historic Sites"><span>Blue Star Museums &amp; Historic Sites</span></a></li><li id="88d38c63-cc1b-47d2-a229-8dbcf5506830" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/geocaching" id="88d38c63-cc1b-47d2-a229-8dbcf5506830" class="navLevel3" title="Geocaching"><span>Geocaching</span></a></li><li id="a557cf19-4bea-4372-b314-4df82a8969db" class=""><a href="http://www.ohiohistory.org/museums-and-historic-sites/historic-sites--facilities-projects" id="a557cf19-4bea-4372-b314-4df82a8969db" class="navLevel3" title="Historic Sites &amp; Facilities Projects"><span>Historic Sites &amp; Facilities Projects</span></a></li></ul></div></div></li><li id="exhibits" class="link2"><a href="/exhibits" class="navLevel2" title="Exhibits"><span>Exhibits</span></a><div class="level1" style="display: none;"><div class="level1-inner"><ul><li id="3d07dd6a-ca45-4e50-8f86-faa232eec416" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits" id="3d07dd6a-ca45-4e50-8f86-faa232eec416" class="navLevel3" title="Ohio History Center Exhibits"><span>Ohio History Center Exhibits</span></a><div class="level1"><div class="level1-inner"><ul><li id="27f22ffe-0a52-4973-bdda-42d4f876ba3f" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/controversy-2" id="27f22ffe-0a52-4973-bdda-42d4f876ba3f" class="navLevel4" title="Controversy 2"><span>Controversy 2</span></a></li><li id="c4b91dd5-b82d-4bb4-b916-4803392aa985" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/following-in-ancient-footsteps" id="c4b91dd5-b82d-4bb4-b916-4803392aa985" class="navLevel4" title="Following in Ancient Footsteps"><span>Following in Ancient Footsteps</span></a></li><li id="92584a2c-ff66-4748-b30e-a2c2dcd472dd" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/follow-the-flag" id="92584a2c-ff66-4748-b30e-a2c2dcd472dd" class="navLevel4" title="Follow the Flag"><span>Follow the Flag</span></a></li><li id="f9bbd31b-7b3f-4652-b1cc-0f4eb88ac57d" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/war-of-1812" id="f9bbd31b-7b3f-4652-b1cc-0f4eb88ac57d" class="navLevel4" title="War of 1812"><span>War of 1812</span></a></li><li id="9435a30a-70a5-481d-8adf-4dfaeebc929a" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/what-is-it" id="9435a30a-70a5-481d-8adf-4dfaeebc929a" class="navLevel4" title="What is it"><span>What is it</span></a></li><li id="23f41959-d180-4ff8-ae6a-47435cd59305" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/ewing-exhibit" id="23f41959-d180-4ff8-ae6a-47435cd59305" class="navLevel4" title="Ewing Exhibit"><span>Ewing Exhibit</span></a></li><li id="0a50c582-2e46-419c-b40a-80d1bdb3da64" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/1950s" id="0a50c582-2e46-419c-b40a-80d1bdb3da64" class="navLevel4" title="1950s"><span>1950s</span></a></li><li id="e4bfa89c-ed44-431d-9bf4-c148e4d4127f" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/transformation-exhibit" id="e4bfa89c-ed44-431d-9bf4-c148e4d4127f" class="navLevel4" title="Transformation Exhibit"><span>Transformation Exhibit</span></a></li><li id="2da640da-5c53-4116-9815-8d04ffe2231f" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/going-going-gone" id="2da640da-5c53-4116-9815-8d04ffe2231f" class="navLevel4" title="Going Going Gone"><span>Going Going Gone</span></a></li><li id="0043d281-c577-486f-92b7-d6301c376e96" class=""><a href="http://www.ohiohistory.org/exhibits/ohio-history-center-exhibits/emerson-berkhart" id="0043d281-c577-486f-92b7-d6301c376e96" class="navLevel4" title="Emerson Berkhart"><span>Emerson Berkhart</span></a></li></ul></div></div></li><li id="4c7cb876-0d99-44ff-9c09-ca42ae5ca6b4" class=""><a href="http://www.ohiohistory.org/exhibits/upcoming-exhibits" id="4c7cb876-0d99-44ff-9c09-ca42ae5ca6b4" class="navLevel3" title="Upcoming Exhibits"><span>Upcoming Exhibits</span></a><div class="level1"><div class="level1-inner"><ul><li id="6747d5f5-3777-4aa5-b1b3-01cbf3727ac7" class=""><a href="http://www.ohiohistory.org/exhibits/upcoming-exhibits/1950s" id="6747d5f5-3777-4aa5-b1b3-01cbf3727ac7" class="navLevel4" title="1950s"><span>1950s</span></a></li></ul></div></div></li><li id="3b73a3a3-9b84-4702-b4a1-3afea5bee42e" class=""><a href="http://www.ohiohistory.org/exhibits/online-exhibits" id="3b73a3a3-9b84-4702-b4a1-3afea5bee42e" class="navLevel3" title="Online Exhibits"><span>Online Exhibits</span></a></li><li id="5250e68f-36ca-4fd2-96fc-043305af04ba" class=""><a href="http://www.ohiohistory.org/exhibits/historic-site-exhibits" id="5250e68f-36ca-4fd2-96fc-043305af04ba" class="navLevel3" title="Historic Site Exhibits"><span>Historic Site Exhibits</span></a></li><li id="8cc2ee2c-0e45-417e-a197-f8e71e722c0e" class=""><a href="http://www.ohiohistory.org/exhibits/past-exhibits" id="8cc2ee2c-0e45-417e-a197-f8e71e722c0e" class="navLevel3" title="Past Exhibits"><span>Past Exhibits</span></a></li><li id="45bbb05e-d13e-4b10-9669-fdf15b4390fa" class=""><a href="http://www.ohiohistory.org/exhibits/visitor-studies" id="45bbb05e-d13e-4b10-9669-fdf15b4390fa" class="navLevel3" title="Visitor Studies"><span>Visitor Studies</span></a></li><li id="86ee1002-fa3b-4ae0-abc8-fd5ff225ac08" class=""><a href="http://www.ohiohistory.org/exhibits/traveling-exhibits" id="86ee1002-fa3b-4ae0-abc8-fd5ff225ac08" class="navLevel3" title="Traveling Exhibits"><span>Traveling Exhibits</span></a><div class="level1"><div class="level1-inner"><ul><li id="b7823886-7d16-4e3c-936f-393d6eccaffb" class=""><a href="http://www.ohiohistory.org/exhibits/traveling-exhibits/morgans-raid" id="b7823886-7d16-4e3c-936f-393d6eccaffb" class="navLevel4" title="Morgans Raid"><span>Morgans Raid</span></a></li></ul></div></div></li></ul></div></div></li><li id="collections--archives" class="link3selected"><a href="http://www.ohiohistory.org/collections--archives" class="navLevel2selected" title="Collections &amp; Archives"><span>Collections &amp; Archives</span></a><div class="level1" style="display: none;"><div class="level1-inner"><ul><li id="0dcd20e2-3d55-4351-ae24-1d68db1fd701" class=""><a href="http://www.ohiohistory.org/collections--archives/archaeology" id="0dcd20e2-3d55-4351-ae24-1d68db1fd701" class="navLevel3" title="Archaeology"><span>Archaeology</span></a><div class="level1"><div class="level1-inner"><ul><li id="1da78e88-7b28-40bd-9df4-c17eedbfa056" class=""><a href="http://www.ohiohistory.org/collections--archives/archaeology/collections2" id="1da78e88-7b28-40bd-9df4-c17eedbfa056" class="navLevel4" title="Collections2"><span>Collections2</span></a></li><li id="874f6bf9-0dd9-405c-a8d8-ab46c9a8dfe9" class=""><a href="http://www.ohiohistory.org/collections--archives/archaeology/new-page" id="874f6bf9-0dd9-405c-a8d8-ab46c9a8dfe9" class="navLevel4" title="New Page"><span>New Page</span></a></li></ul></div></div></li><li id="0c859bfd-7094-4a51-9f77-2702a45ffe1f" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library" id="0c859bfd-7094-4a51-9f77-2702a45ffe1f" class="navLevel3" title="Archives/Library"><span>Archives/Library</span></a><div class="level1"><div class="level1-inner"><ul><li id="c107ba22-46de-48c9-89ce-204a6cb6b207" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/about-the-collection" id="c107ba22-46de-48c9-89ce-204a6cb6b207" class="navLevel4" title="About the Collection"><span>About the Collection</span></a></li><li id="514e4767-6988-44e0-a019-94a8f00bf866" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/visit" id="514e4767-6988-44e0-a019-94a8f00bf866" class="navLevel4" title="Visit"><span>Visit</span></a></li><li id="299d56e8-875d-467d-a916-1f617c33ec22" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/faq-contact" id="299d56e8-875d-467d-a916-1f617c33ec22" class="navLevel4" title="FAQ/Contact"><span>FAQ/Contact</span></a></li><li id="f2aa6c5f-ba4b-4162-b01d-9adb798fd027" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/interlibrary-loan" id="f2aa6c5f-ba4b-4162-b01d-9adb798fd027" class="navLevel4" title="Interlibrary Loan"><span>Interlibrary Loan</span></a></li><li id="1dd9c9c2-c3d7-4bc9-b8c0-9040817bdef4" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/copy-requests" id="1dd9c9c2-c3d7-4bc9-b8c0-9040817bdef4" class="navLevel4" title="Copy Requests"><span>Copy Requests</span></a></li><li id="c494dfef-cc79-4e95-a0de-e47e38cb0f21" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/research-requests/researchers" id="c494dfef-cc79-4e95-a0de-e47e38cb0f21" class="navLevel4" title="Research Requests"><span>Research Requests</span></a></li><li id="0e925998-e77a-410e-adac-dfa1f9655ebb" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/research-guides" id="0e925998-e77a-410e-adac-dfa1f9655ebb" class="navLevel4" title="Research Guides"><span>Research Guides</span></a></li><li id="3fa1916b-a817-4531-8554-b291ea53070b" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/workshops" id="3fa1916b-a817-4531-8554-b291ea53070b" class="navLevel4" title="Workshops"><span>Workshops</span></a></li><li id="55d427d4-086a-4817-8a3f-7457b7e3e7c7" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/youngstown-center-archives" id="55d427d4-086a-4817-8a3f-7457b7e3e7c7" class="navLevel4" title="Youngstown Center Archives"><span>Youngstown Center Archives</span></a></li><li id="41782e87-9277-463c-a536-1a94a18ddd9c" class=""><a href="http://www.ohiohistory.org/collections--archives/archives-library/services" id="41782e87-9277-463c-a536-1a94a18ddd9c" class="navLevel4" title="Services"><span>Services</span></a></li></ul></div></div></li><li id="cedaf797-bb1f-40ba-a667-ecd90038f1cb" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services" id="cedaf797-bb1f-40ba-a667-ecd90038f1cb" class="navLevel3" title="Digital Collections &amp; Services"><span>Digital Collections &amp; Services</span></a><div class="level1"><div class="level1-inner"><ul><li id="da67b736-ec03-4222-8877-8bcacdb5edc4" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services/volunteer" id="da67b736-ec03-4222-8877-8bcacdb5edc4" class="navLevel4" title="Volunteer"><span>Volunteer</span></a></li><li id="c2464356-7f66-4b94-bb4b-22b8cfa5cc07" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services/digitization-services" id="c2464356-7f66-4b94-bb4b-22b8cfa5cc07" class="navLevel4" title="Digitization Services"><span>Digitization Services</span></a></li><li id="a8c45066-0f43-40b2-bdd1-9bc57bea3631" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services/more-collections" id="a8c45066-0f43-40b2-bdd1-9bc57bea3631" class="navLevel4" title="More Collections"><span>More Collections</span></a></li><li id="22fe5b05-8e1c-48aa-b230-d1a32669fd5d" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services/microfilm-services/microfilm-duplication" id="22fe5b05-8e1c-48aa-b230-d1a32669fd5d" class="navLevel4" title="Microfilm Services"><span>Microfilm Services</span></a></li><li id="0ac7c55c-2938-4c5f-aa43-a84d7b668180" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services/oral-history-program" id="0ac7c55c-2938-4c5f-aa43-a84d7b668180" class="navLevel4" title="Oral History Program"><span>Oral History Program</span></a></li><li id="d694bbe0-7cf2-49d3-8b3a-1bede74bb8e6" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services/join-ohio-memory" id="d694bbe0-7cf2-49d3-8b3a-1bede74bb8e6" class="navLevel4" title="Join Ohio Memory"><span>Join Ohio Memory</span></a></li><li id="1b9a103a-d6f3-4ab4-95e0-458bd27afd18" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services/rights--reproduction" id="1b9a103a-d6f3-4ab4-95e0-458bd27afd18" class="navLevel4" title="Rights &amp; Reproduction"><span>Rights &amp; Reproduction</span></a></li><li id="7aac965f-02e6-4309-b8b2-f0e5adc986ca" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services/faq" id="7aac965f-02e6-4309-b8b2-f0e5adc986ca" class="navLevel4" title="FAQ"><span>FAQ</span></a></li><li id="1e4deda5-a8d0-48b1-8e80-6ac13835b3fe" class=""><a href="http://www.ohiohistory.org/collections--archives/digital-collections--services/meet-the-staff" id="1e4deda5-a8d0-48b1-8e80-6ac13835b3fe" class="navLevel4" title="Meet the Staff"><span>Meet the Staff</span></a></li></ul></div></div></li><li id="a365edbb-37c4-4056-a8fd-abf3299fe887" class=""><a href="http://www.ohiohistory.org/collections--archives/history-collections" id="a365edbb-37c4-4056-a8fd-abf3299fe887" class="navLevel3" title="History Collections"><span>History Collections</span></a><div class="level1"><div class="level1-inner"><ul><li id="88df1e5a-181f-4383-8307-4a1bcf862748" class=""><a href="http://www.ohiohistory.org/collections--archives/registrars-office" id="88df1e5a-181f-4383-8307-4a1bcf862748" class="navLevel4" title="Registrars Office"><span>Registrars Office</span></a></li><li id="626323fd-192e-46d5-b5f6-08632f7ef77c" class=""><a href="http://www.ohiohistory.org/collections--archives/history-collections/about-the-collections" id="626323fd-192e-46d5-b5f6-08632f7ef77c" class="navLevel4" title="About the Collections"><span>About the Collections</span></a></li><li id="91c73e4a-c225-451c-855e-67b74ae111ad" class=""><a href="http://www.ohiohistory.org/collections--archives/history-collections/adopt-an-artifact" id="91c73e4a-c225-451c-855e-67b74ae111ad" class="navLevel4" title="Adopt an Artifact"><span>Adopt an Artifact</span></a></li><li id="ab2e3d14-9a0e-4a2b-8ea7-061d9b38a27e" class=""><a href="http://www.ohiohistory.org/collections--archives/history-collections/meet-the-curators" id="ab2e3d14-9a0e-4a2b-8ea7-061d9b38a27e" class="navLevel4" title="Meet the Curators"><span>Meet the Curators</span></a></li><li id="b8e1c178-d159-48f2-b159-3dd5964a71d5" class=""><a href="http://www.ohiohistory.org/collections--archives/history-collections/faqs" id="b8e1c178-d159-48f2-b159-3dd5964a71d5" class="navLevel4" title="FAQs"><span>FAQs</span></a></li><li id="fda6793f-e1ef-474d-96c2-84a2732c6efa" class=""><a href="http://www.ohiohistory.org/collections--archives/history-collections/about-the-collections" id="fda6793f-e1ef-474d-96c2-84a2732c6efa" class="navLevel4" title="Publications"><span>Publications</span></a></li><li id="9b56fa30-bf7c-4951-81f5-aa443f482dc0" class=""><a href="http://www.ohiohistory.org/collections--archives/history-collections/conservation" id="9b56fa30-bf7c-4951-81f5-aa443f482dc0" class="navLevel4" title="Conservation"><span>Conservation</span></a></li></ul></div></div></li><li id="16569ec5-7b60-4bab-a0ef-ec0d5c90ade8" class=""><a href="http://www.ohiohistory.org/collections--archives/manuscript-and-audiovisual" id="16569ec5-7b60-4bab-a0ef-ec0d5c90ade8" class="navLevel3" title="Manuscript and Audiovisual"><span>Manuscript and Audiovisual</span></a><div class="level1"><div class="level1-inner"><ul><li id="c18ea570-e57b-4342-acb2-075c1c0e1d93" class=""><a href="http://www.ohiohistory.org/collections--archives/manuscript-and-audiovisual/manuscripts" id="c18ea570-e57b-4342-acb2-075c1c0e1d93" class="navLevel4" title="Manuscripts"><span>Manuscripts</span></a></li><li id="6544ff02-1bbd-4158-b8b7-9084661fd415" class=""><a href="http://www.ohiohistory.org/collections--archives/manuscript-and-audiovisual/audiovisuals" id="6544ff02-1bbd-4158-b8b7-9084661fd415" class="navLevel4" title="Audiovisuals"><span>Audiovisuals</span></a></li></ul></div></div></li><li id="5b19ca72-72d5-4538-8c6c-35df4b8fec34" class=""><a href="http://www.ohiohistory.org/collections--archives/museum-and-library-services" id="5b19ca72-72d5-4538-8c6c-35df4b8fec34" class="navLevel3" title="Museum and Library Services"><span>Museum and Library Services</span></a><div class="level1"><div class="level1-inner"><ul><li id="f2e49e60-e0c7-4ba9-81cb-052c954ec837" class=""><a href="http://www.ohiohistory.org/collections--archives/museum-and-library-services/native-american-outreach" id="f2e49e60-e0c7-4ba9-81cb-052c954ec837" class="navLevel4" title="Native American Outreach"><span>Native American Outreach</span></a></li><li id="9fcd4c92-7828-4d13-9bd3-d986b5c6fb8f" class=""><a href="http://www.ohiohistory.org/collections--archives/museum-and-library-services/faq" id="9fcd4c92-7828-4d13-9bd3-d986b5c6fb8f" class="navLevel4" title="FAQ"><span>FAQ</span></a></li><li id="3ce311a8-3603-4ab0-9e07-7372380ee2ea" class=""><a href="http://www.ohiohistory.org/collections--archives/museum-and-library-services/angelas-page" id="3ce311a8-3603-4ab0-9e07-7372380ee2ea" class="navLevel4" title="Angelas page"><span>Angelas page</span></a></li></ul></div></div></li><li id="51f0f1a0-7103-4c31-9fb8-a4175e9d02d2" class=""><a href="http://www.ohiohistory.org/collections--archives/natural-history" id="51f0f1a0-7103-4c31-9fb8-a4175e9d02d2" class="navLevel3" title="Natural History"><span>Natural History</span></a><div class="level1"><div class="level1-inner"><ul><li id="375b244a-4402-4063-8bb9-23f3297d6dc1" class=""><a href="http://www.ohiohistory.org/collections--archives/natural-history/meet-the-curator" id="375b244a-4402-4063-8bb9-23f3297d6dc1" class="navLevel4" title="Meet the Curator"><span>Meet the Curator</span></a></li><li id="06b6437e-481a-4481-bed0-31c92c631732" class=""><a href="http://www.ohiohistory.org/collections--archives/natural-history/collections" id="06b6437e-481a-4481-bed0-31c92c631732" class="navLevel4" title="Collections"><span>Collections</span></a></li><li id="a4203673-2f85-4e7f-86dd-1df335ac67ea" class=""><a href="http://www.ohiohistory.org/collections--archives/natural-history/exhibits" id="a4203673-2f85-4e7f-86dd-1df335ac67ea" class="navLevel4" title="Exhibits"><span>Exhibits</span></a></li><li id="5150541d-f9e2-446a-81a0-f6060d81f9f6" class=""><a href="http://www.ohiohistory.org/collections--archives/natural-history/research" id="5150541d-f9e2-446a-81a0-f6060d81f9f6" class="navLevel4" title="Research"><span>Research</span></a></li><li id="09a73c98-49cc-4655-9495-cdc6dad63434" class=""><a href="http://www.ohiohistory.org/collections--archives/natural-history/research-requests" id="09a73c98-49cc-4655-9495-cdc6dad63434" class="navLevel4" title="Research Requests"><span>Research Requests</span></a></li></ul></div></div></li><li id="77bede8a-182e-4c6d-b921-67af2d2382dc" class=""><a href="http://www.ohiohistory.org/collections--archives/registrars-office" id="77bede8a-182e-4c6d-b921-67af2d2382dc" class="navLevel3" title="Registrars Office"><span>Registrars Office</span></a></li><li id="56d619b6-6e85-49d3-8fce-b71bacbcf38a" class=""><a href="http://www.ohiohistory.org/collections--archives/state-archives" id="56d619b6-6e85-49d3-8fce-b71bacbcf38a" class="navLevel3" title="State Archives"><span>State Archives</span></a><div class="level1"><div class="level1-inner"><ul><li id="40781739-c59f-489d-9c57-1d1bd1be1e68" class=""><a href="http://www.ohiohistory.org/collections--archives/state-archives/lgrp-home/lgrp-training" id="40781739-c59f-489d-9c57-1d1bd1be1e68" class="navLevel4" title="LGRP Home"><span>LGRP Home</span></a></li><li id="c4a24d48-36f0-4fdd-b887-fafcb721e2d2" class=""><a href="http://www.ohiohistory.org/collections--archives/state-archives/state-archives-policies" id="c4a24d48-36f0-4fdd-b887-fafcb721e2d2" class="navLevel4" title="State Archives Policies"><span>State Archives Policies</span></a></li><li id="39819081-96fe-45e7-bd10-f0b69a2b3617" class=""><a href="http://www.ohiohistory.org/collections--archives/state-archives/state-government" id="39819081-96fe-45e7-bd10-f0b69a2b3617" class="navLevel4" title="State Government"><span>State Government</span></a></li><li id="ea1af39a-6a9f-46e4-b333-aee229924823" class=""><a href="http://www.ohiohistory.org/collections--archives/state-archives/fundamental-documents" id="ea1af39a-6a9f-46e4-b333-aee229924823" class="navLevel4" title="Fundamental Documents"><span>Fundamental Documents</span></a></li><li id="19deffb2-28e2-48f0-ad7e-387f3439476e" class=""><a href="http://www.ohiohistory.org/collections--archives/state-archives/ohrab" id="19deffb2-28e2-48f0-ad7e-387f3439476e" class="navLevel4" title="OHRAB"><span>OHRAB</span></a></li></ul></div></div></li><li id="2f23633a-91ec-4f3a-a7ba-234f40d5e72e" class=""><a href="http://www.ohiohistory.org/collections--archives/online-collections-catalog" id="2f23633a-91ec-4f3a-a7ba-234f40d5e72e" class="navLevel3" title="Online Collections Catalog"><span>Online Collections Catalog</span></a></li></ul></div></div></li><li id="programs--events" class="link4"><a href="/programs--events" class="navLevel2" title="Programs &amp; Events"><span>Programs &amp; Events</span></a><div class="level1" style="display: none;"><div class="level1-inner"><ul><li id="ed0ba7aa-ba91-4b85-83fe-9c580b610850" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits" id="ed0ba7aa-ba91-4b85-83fe-9c580b610850" class="navLevel3" title="Exhibits"><span>Exhibits</span></a><div class="level1"><div class="level1-inner"><ul><li id="91e0cfd6-8569-4cf9-9316-6979138bd5c8" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/visitor-studies" id="91e0cfd6-8569-4cf9-9316-6979138bd5c8" class="navLevel4" title="Visitor Studies"><span>Visitor Studies</span></a></li><li id="c9d5f0a7-cc47-4410-a087-7c1335df11f1" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/traveling-exhibits" id="c9d5f0a7-cc47-4410-a087-7c1335df11f1" class="navLevel4" title="Traveling Exhibits"><span>Traveling Exhibits</span></a></li><li id="0bc61a9a-987f-43b3-876b-ab4849f9e3b2" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/upcoming-exhibits" id="0bc61a9a-987f-43b3-876b-ab4849f9e3b2" class="navLevel4" title="Upcoming Exhibits"><span>Upcoming Exhibits</span></a></li><li id="c50c1344-e709-4e82-8a46-013d5b5a30e7" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/online-exhibits" id="c50c1344-e709-4e82-8a46-013d5b5a30e7" class="navLevel4" title="Online Exhibits"><span>Online Exhibits</span></a></li><li id="ed760c9c-6755-425a-a769-00fba14aa645" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/controversy-2" id="ed760c9c-6755-425a-a769-00fba14aa645" class="navLevel4" title="Controversy 2"><span>Controversy 2</span></a></li><li id="86248914-6724-4355-8f20-8f79ed38392c" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/war-of-1812" id="86248914-6724-4355-8f20-8f79ed38392c" class="navLevel4" title="War of 1812"><span>War of 1812</span></a></li><li id="7c4f2fa4-53a3-4554-9bd1-9e2ecdb13686" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/following-in-ancient-footsteps" id="7c4f2fa4-53a3-4554-9bd1-9e2ecdb13686" class="navLevel4" title="Following in Ancient Footsteps"><span>Following in Ancient Footsteps</span></a></li><li id="6d58fde1-f5c2-4a1f-8686-747811aed2bc" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/follow-the-flag" id="6d58fde1-f5c2-4a1f-8686-747811aed2bc" class="navLevel4" title="Follow the Flag"><span>Follow the Flag</span></a></li><li id="709edf1d-2626-4c2c-ab06-d05069f7a186" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/past-exhibits" id="709edf1d-2626-4c2c-ab06-d05069f7a186" class="navLevel4" title="Past Exhibits"><span>Past Exhibits</span></a></li><li id="cf5970f4-d2e8-4773-bc06-e5d67e02b8b9" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/faqs" id="cf5970f4-d2e8-4773-bc06-e5d67e02b8b9" class="navLevel4" title="FAQ's"><span>FAQ's</span></a></li><li id="cb5b75e5-ab08-4151-aeb9-c1354e39a7d6" class=""><a href="http://www.ohiohistory.org/programs--events/exhibits/ohio-history-center-exhibits" id="cb5b75e5-ab08-4151-aeb9-c1354e39a7d6" class="navLevel4" title="Ohio History Center Exhibits"><span>Ohio History Center Exhibits</span></a></li></ul></div></div></li><li id="2212bd34-768d-4671-9c95-508f5c5f4d38" class=""><a href="http://www.ohiohistoryhost.org/eventcalendar" id="2212bd34-768d-4671-9c95-508f5c5f4d38" class="navLevel3" title="Events Calendar"><span>Events Calendar</span></a></li><li id="f9e2e6b3-56b8-4241-8b9e-0cd070e1d3e3" class=""><a href="http://www.ohiohistory.org/programs--events/blast-from-the-past-summer-camps" id="f9e2e6b3-56b8-4241-8b9e-0cd070e1d3e3" class="navLevel3" title="Blast from the Past Summer Camps"><span>Blast from the Past Summer Camps</span></a></li><li id="184e84b4-5c38-4ddf-913f-5370ebb0d1d0" class=""><a href="http://www.ohiohistory.org/programs--events/tours" id="184e84b4-5c38-4ddf-913f-5370ebb0d1d0" class="navLevel3" title="Tours"><span>Tours</span></a><div class="level1"><div class="level1-inner"><ul><li id="7f6a9882-e1e1-4813-af70-6963fa6bad4e" class=""><a href="http://www.ohiohistory.org/programs--events/tours/gossip-tours" id="7f6a9882-e1e1-4813-af70-6963fa6bad4e" class="navLevel4" title="Gossip Tours"><span>Gossip Tours</span></a></li><li id="a3a08db3-a340-43c9-8884-e2f2d839cdd9" class=""><a href="http://www.ohiohistory.org/programs--events/tours/group-tours/mayhem-mystery" id="a3a08db3-a340-43c9-8884-e2f2d839cdd9" class="navLevel4" title="Group Tours"><span>Group Tours</span></a></li></ul></div></div></li><li id="fa039cb8-08f7-4062-92cc-cee6873ff7a0" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village" id="fa039cb8-08f7-4062-92cc-cee6873ff7a0" class="navLevel3" title="Ohio Village"><span>Ohio Village</span></a><div class="level1"><div class="level1-inner"><ul><li id="705b1822-e6a3-4711-ac38-83183d5bc70e" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/dickens-of-a-christmas" id="705b1822-e6a3-4711-ac38-83183d5bc70e" class="navLevel4" title="Dickens of a Christmas"><span>Dickens of a Christmas</span></a></li><li id="07c892c3-b942-46af-8193-2873682b688f" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/all-hallows-eve" id="07c892c3-b942-46af-8193-2873682b688f" class="navLevel4" title="All Hallows Eve"><span>All Hallows Eve</span></a></li><li id="c2b8a651-f4c5-40e9-8d0d-75509ed35b37" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/glorious-4th" id="c2b8a651-f4c5-40e9-8d0d-75509ed35b37" class="navLevel4" title="Glorious 4th"><span>Glorious 4th</span></a></li><li id="95924e4d-aee8-4239-b17e-7ee640acb9cd" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/dinner-programs" id="95924e4d-aee8-4239-b17e-7ee640acb9cd" class="navLevel4" title="Dinner Programs"><span>Dinner Programs</span></a></li><li id="bfb625c2-b197-49c2-be8c-ab7f2fa0dafc" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/special-events" id="bfb625c2-b197-49c2-be8c-ab7f2fa0dafc" class="navLevel4" title="Special Events"><span>Special Events</span></a></li><li id="83bfb64e-13bb-46e6-a8e5-a0b67b0462ae" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/pleasures-of-the-cup" id="83bfb64e-13bb-46e6-a8e5-a0b67b0462ae" class="navLevel4" title="Pleasures of the Cup"><span>Pleasures of the Cup</span></a></li><li id="68e46486-634a-453a-92ea-fc6a888c78bb" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/muffins" id="68e46486-634a-453a-92ea-fc6a888c78bb" class="navLevel4" title="Muffins"><span>Muffins</span></a></li><li id="3c4b762a-9560-4975-9ba0-d3041245056c" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/civil-war-reenactment" id="3c4b762a-9560-4975-9ba0-d3041245056c" class="navLevel4" title="Civil War Reenactment"><span>Civil War Reenactment</span></a></li><li id="38071adf-180e-47b5-8b8d-9fb5e564376d" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/storybook-village" id="38071adf-180e-47b5-8b8d-9fb5e564376d" class="navLevel4" title="Storybook Village"><span>Storybook Village</span></a></li><li id="fc899b33-d971-4ed2-b0f0-02a3a6a6e1cc" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/ohio-made-celebrating-artists-now" id="fc899b33-d971-4ed2-b0f0-02a3a6a6e1cc" class="navLevel4" title="Ohio Made: Celebrating Artists Now"><span>Ohio Made: Celebrating Artists Now</span></a></li><li id="4b99bcd8-70f1-4118-b61a-3c6e1ab5ab44" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/food-truck-festival" id="4b99bcd8-70f1-4118-b61a-3c6e1ab5ab44" class="navLevel4" title="Food Truck Festival"><span>Food Truck Festival</span></a></li><li id="06d3f39b-d08a-4cc6-ae31-105fcb1829f2" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/new-node" id="06d3f39b-d08a-4cc6-ae31-105fcb1829f2" class="navLevel4" title="Ohio Village Soldiers’ Aid Fair: A Civil War Sanitary Fair"><span>Ohio Village Soldiers’ Aid Fair: A Civil War Sanitary Fair</span></a></li><li id="2dc51b61-4752-44a2-b461-ad94a4d55da6" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/the-world-of-ohio-fair" id="2dc51b61-4752-44a2-b461-ad94a4d55da6" class="navLevel4" title="The World of Ohio Fair"><span>The World of Ohio Fair</span></a></li><li id="1edeeca0-c369-4536-aa39-cd8c0aa6c206" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-village/velvet-ice-cream-day" id="1edeeca0-c369-4536-aa39-cd8c0aa6c206" class="navLevel4" title="Velvet Ice Cream Day"><span>Velvet Ice Cream Day</span></a></li></ul></div></div></li><li id="94554cf5-b378-4c67-9116-b027f4546425" class=""><a href="http://www.ohiohistory.org/programs--events/girl-scouts" id="94554cf5-b378-4c67-9116-b027f4546425" class="navLevel3" title="Girl Scouts"><span>Girl Scouts</span></a></li><li id="857efc42-d95f-4dcc-89a8-9adfe6fc4a3c" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-history-center" id="857efc42-d95f-4dcc-89a8-9adfe6fc4a3c" class="navLevel3" title="Ohio History Center"><span>Ohio History Center</span></a><div class="level1"><div class="level1-inner"><ul><li id="1b277f51-675f-41b8-ac2c-e3aef7cf739a" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-history-center/echoes-in-time-theater" id="1b277f51-675f-41b8-ac2c-e3aef7cf739a" class="navLevel4" title="Echoes in Time Theater"><span>Echoes in Time Theater</span></a></li><li id="c5237150-a51a-4ea2-9811-7f9874c294d6" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-history-center/cabin-fever-weekends" id="c5237150-a51a-4ea2-9811-7f9874c294d6" class="navLevel4" title="Cabin Fever Weekends"><span>Cabin Fever Weekends</span></a></li><li id="fa6c28ec-e10e-4f4c-b252-a4ac9124863d" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-history-center/guided-tours" id="fa6c28ec-e10e-4f4c-b252-a4ac9124863d" class="navLevel4" title="Guided Tours"><span>Guided Tours</span></a></li><li id="82c922f0-45b9-468f-8aeb-6fa49f7ddc7f" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-history-center/family-programs" id="82c922f0-45b9-468f-8aeb-6fa49f7ddc7f" class="navLevel4" title="Family Programs"><span>Family Programs</span></a></li><li id="b7e7f485-bc04-4793-b9a6-3b9bc4983c0c" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-history-center/evening-programs" id="b7e7f485-bc04-4793-b9a6-3b9bc4983c0c" class="navLevel4" title="Evening Programs"><span>Evening Programs</span></a></li><li id="aef1d6fa-e20c-4a81-8776-c9a7b4177582" class=""><a href="http://www.ohiohistory.org/programs--events/ohio-history-center/vietnam-veterans-commemoration" id="aef1d6fa-e20c-4a81-8776-c9a7b4177582" class="navLevel4" title="Vietnam Veterans Commemoration"><span>Vietnam Veterans Commemoration</span></a></li></ul></div></div></li><li id="8a265f2c-e216-47a3-8d69-c7abbd0bb2aa" class=""><a href="http://www.ohiohistory.org/programs--events/workshops" id="8a265f2c-e216-47a3-8d69-c7abbd0bb2aa" class="navLevel3" title="Workshops"><span>Workshops</span></a></li><li id="64c11952-ea3d-4f64-8591-67e39480b1f6" class=""><a href="http://www.ohiohistory.org/programs--events/event-rental" id="64c11952-ea3d-4f64-8591-67e39480b1f6" class="navLevel3" title="Event Rental"><span>Event Rental</span></a></li><li id="b00c4553-0046-4d1a-af43-9d0351c332d2" class=""><a href="http://www.ohiohistory.org/programs--events/big-give" id="b00c4553-0046-4d1a-af43-9d0351c332d2" class="navLevel3" title="Big Give"><span>Big Give</span></a></li><li id="5cfef6fd-4367-4904-aad2-77c1bbe39a36" class=""><a href="http://www.ohiohistory.org/programs--events/holidays" id="5cfef6fd-4367-4904-aad2-77c1bbe39a36" class="navLevel3" title="Holidays"><span>Holidays</span></a></li><li id="9c133b39-9ecd-486e-9cfc-4279bd127123" class=""><a href="http://www.ohiohistory.org/programs--events/black-history-month" id="9c133b39-9ecd-486e-9cfc-4279bd127123" class="navLevel3" title="Black History Month"><span>Black History Month</span></a></li><li id="37e4cb67-cd47-433c-91ae-a30867863bde" class=""><a href="http://www.ohiohistory.org/programs--events/summer-events" id="37e4cb67-cd47-433c-91ae-a30867863bde" class="navLevel3" title="Summer Events"><span>Summer Events</span></a></li></ul></div></div></li><li id="education" class="link5"><a href="http://www.ohiohistory.org/education" class="navLevel2" title="Education"><span>Education</span></a><div class="level1"><div class="level1-inner"><ul><li id="a3084ada-6c21-4a3c-bea9-fe0786d5b281" class=""><a href="http://www.ohiohistory.org/education/ohio-as-america" id="a3084ada-6c21-4a3c-bea9-fe0786d5b281" class="navLevel3" title="Ohio as America"><span>Ohio as America</span></a></li><li id="7f50793f-4cf7-4e62-907a-7bf00af3241f" class=""><a href="http://www.ohiohistory.org/education/outreach" id="7f50793f-4cf7-4e62-907a-7bf00af3241f" class="navLevel3" title="Outreach"><span>Outreach</span></a></li><li id="c067c73f-9e6b-46fe-b1bb-d75f3f57c82f" class=""><a href="http://www.ohiohistory.org/education/museum-in-a-box" id="c067c73f-9e6b-46fe-b1bb-d75f3f57c82f" class="navLevel3" title="Museum in a Box"><span>Museum in a Box</span></a></li><li id="95da54ef-2e4a-433a-aad8-98a6284fe4bf" class=""><a href="http://www.ohiohistory.org/education/national-history-day-in-ohio" id="95da54ef-2e4a-433a-aad8-98a6284fe4bf" class="navLevel3" title="National History Day in Ohio"><span>National History Day in Ohio</span></a><div class="level1"><div class="level1-inner"><ul><li id="5f9a1a4f-49e0-4e2d-ab65-457af00ea43a" class=""><a href="http://www.ohiohistory.org/education/national-history-day-in-ohio/about" id="5f9a1a4f-49e0-4e2d-ab65-457af00ea43a" class="navLevel4" title="About"><span>About</span></a></li><li id="dfff49e1-254a-4021-8915-73519e95e1a5" class=""><a href="http://www.ohiohistory.org/education/national-history-day-in-ohio/contest-information" id="dfff49e1-254a-4021-8915-73519e95e1a5" class="navLevel4" title="Contest Information"><span>Contest Information</span></a></li><li id="dc5d0140-2212-4324-a892-9fd490d900c9" class=""><a href="http://www.ohiohistory.org/education/national-history-day-in-ohio/teachers" id="dc5d0140-2212-4324-a892-9fd490d900c9" class="navLevel4" title="Teachers"><span>Teachers</span></a></li><li id="12c0fde1-3a71-414a-8b61-268bf998d927" class=""><a href="http://www.ohiohistory.org/education/national-history-day-in-ohio/students" id="12c0fde1-3a71-414a-8b61-268bf998d927" class="navLevel4" title="Students"><span>Students</span></a></li><li id="a87a96aa-4dcc-4471-a906-819f0ee63a48" class=""><a href="http://www.ohiohistory.org/education/national-history-day-in-ohio/parents" id="a87a96aa-4dcc-4471-a906-819f0ee63a48" class="navLevel4" title="Parents"><span>Parents</span></a></li><li id="4bc31758-8996-4fa4-b3ce-ac0a51f56276" class=""><a href="http://www.ohiohistory.org/education/national-history-day-in-ohio/get-involved" id="4bc31758-8996-4fa4-b3ce-ac0a51f56276" class="navLevel4" title="Get Involved"><span>Get Involved</span></a></li><li id="d04f0539-bb6b-49ae-bbb0-f74ff4a9876e" class=""><a href="http://www.ohiohistory.org/education/national-history-day-in-ohio/contact" id="d04f0539-bb6b-49ae-bbb0-f74ff4a9876e" class="navLevel4" title="Contact"><span>Contact</span></a></li></ul></div></div></li><li id="65ca5acf-788a-4e37-aa76-2d8d54a8111f" class=""><a href="http://www.ohiohistory.org/education/field-trips" id="65ca5acf-788a-4e37-aa76-2d8d54a8111f" class="navLevel3" title="Field Trips"><span>Field Trips</span></a><div class="level1"><div class="level1-inner"><ul><li id="137f20cc-8afd-44f7-9cec-d794f2f0cbf6" class=""><a href="http://www.ohiohistory.org/education/field-trips/general-information" id="137f20cc-8afd-44f7-9cec-d794f2f0cbf6" class="navLevel4" title="General Information"><span>General Information</span></a></li><li id="a27aadfd-0954-4e2e-994f-ddc0a98dd08a" class=""><a href="http://www.ohiohistory.org/education/field-trips/tours" id="a27aadfd-0954-4e2e-994f-ddc0a98dd08a" class="navLevel4" title="Tours"><span>Tours</span></a></li><li id="934675fa-120b-4874-be18-3e9abbd1eb9e" class=""><a href="http://www.ohiohistory.org/education/field-trips/30-minute-programs" id="934675fa-120b-4874-be18-3e9abbd1eb9e" class="navLevel4" title="30-Minute Programs"><span>30-Minute Programs</span></a></li><li id="4828df0e-a36d-442d-8491-6eda01085716" class=""><a href="http://www.ohiohistory.org/education/field-trips/immersive-programs" id="4828df0e-a36d-442d-8491-6eda01085716" class="navLevel4" title="Immersive Programs"><span>Immersive Programs</span></a></li></ul></div></div></li><li id="3b8e7829-a75f-478c-b450-08a2f2c549b6" class=""><a href="http://www.ohiohistory.org/education/professional-development" id="3b8e7829-a75f-478c-b450-08a2f2c549b6" class="navLevel3" title="Professional Development"><span>Professional Development</span></a></li><li id="54abf719-311d-4e9d-b6d8-257f73c35354" class=""><a href="http://www.ohiohistory.org/education/educator-resources" id="54abf719-311d-4e9d-b6d8-257f73c35354" class="navLevel3" title="Educator Resources"><span>Educator Resources</span></a></li><li id="d43e620d-b738-43a9-bf66-73434520e778" class=""><a href="http://www.ohiohistory.org/education/distance-learning" id="d43e620d-b738-43a9-bf66-73434520e778" class="navLevel3" title="Distance Learning"><span>Distance Learning</span></a></li><li id="6a825cc6-1ebf-4f98-adc6-2426a3bbd7fb" class=""><a href="http://www.ohiohistory.org/education/history-to-go-van" id="6a825cc6-1ebf-4f98-adc6-2426a3bbd7fb" class="navLevel3" title="History to Go Van"><span>History to Go Van</span></a><div class="level1"><div class="level1-inner"><ul><li id="3f62b945-fd62-48e5-a9c5-a7c381b59a8b" class=""><a href="http://www.ohiohistory.org/education/history-to-go-van/pioneer-life" id="3f62b945-fd62-48e5-a9c5-a7c381b59a8b" class="navLevel4" title="Pioneer Life"><span>Pioneer Life</span></a></li><li id="820315a2-c6dc-4d87-a3cd-80b62f811062" class=""><a href="http://www.ohiohistory.org/education/history-to-go-van/achievement-advantage" id="820315a2-c6dc-4d87-a3cd-80b62f811062" class="navLevel4" title="Achievement Advantage"><span>Achievement Advantage</span></a></li><li id="823a9ef1-b5c3-494a-9d34-353f4c9bcf7a" class=""><a href="http://www.ohiohistory.org/education/history-to-go-van/agriculture-and-nature" id="823a9ef1-b5c3-494a-9d34-353f4c9bcf7a" class="navLevel4" title="Agriculture and Nature"><span>Agriculture and Nature</span></a></li><li id="b5f94893-bbbc-4708-9fbd-e6d22b71c904" class=""><a href="http://www.ohiohistory.org/education/history-to-go-van/american-indian-experience" id="b5f94893-bbbc-4708-9fbd-e6d22b71c904" class="navLevel4" title="American Indian Experience"><span>American Indian Experience</span></a></li><li id="e816245f-9df5-4deb-9732-798206f15dc5" class=""><a href="http://www.ohiohistory.org/education/history-to-go-van/1940s-and-world-war-ii" id="e816245f-9df5-4deb-9732-798206f15dc5" class="navLevel4" title="1940s and World War II"><span>1940s and World War II</span></a></li><li id="f24ffb58-7f88-4c1b-bebe-1a9cd7b685de" class=""><a href="http://www.ohiohistory.org/education/history-to-go-van/school-of-the-soldier" id="f24ffb58-7f88-4c1b-bebe-1a9cd7b685de" class="navLevel4" title="School of the Soldier"><span>School of the Soldier</span></a></li></ul></div></div></li><li id="b3d92c5a-b8c9-4029-b04b-94a0308cde76" class=""><a href="http://www.ohiohistory.org/education/blackboard-mailing" id="b3d92c5a-b8c9-4029-b04b-94a0308cde76" class="navLevel3" title="Blackboard Mailing"><span>Blackboard Mailing</span></a><div class="level1"><div class="level1-inner"><ul><li id="98bfb0e9-b9ca-4eae-a456-346938731f10" class=""><a href="http://www.ohiohistory.org/education/blackboard-mailing/thank-you" id="98bfb0e9-b9ca-4eae-a456-346938731f10" class="navLevel4" title="Thank you"><span>Thank you</span></a></li></ul></div></div></li><li id="f508270e-18e8-4d60-a214-c1f31a6d2668" class=""><a href="http://www.ohiohistory.org/education/founding-documents" id="f508270e-18e8-4d60-a214-c1f31a6d2668" class="navLevel3" title="Founding Documents"><span>Founding Documents</span></a></li><li id="f335d11a-3db7-49a9-9843-7ae29d3f8783" class=""><a href="http://www.ohiohistory.org/education/buckeye-council-for-history-education" id="f335d11a-3db7-49a9-9843-7ae29d3f8783" class="navLevel3" title="Buckeye Council for History Education"><span>Buckeye Council for History Education</span></a></li><li id="a0a2c340-ddf8-4bc2-bbee-43a4a33d47c0" class=""><a href="http://www.ohiohistorycentral.org/" id="a0a2c340-ddf8-4bc2-bbee-43a4a33d47c0" class="navLevel3" title="Ohio History Central"><span>Ohio History Central</span></a></li></ul></div></div></li><li id="local-history-office" class="link6"><a href="http://www.ohiohistory.org/local-history-office" class="navLevel2" title="Local History Office"><span>Local History Office</span></a><div class="level1" style="display: none;"><div class="level1-inner"><ul><li id="59909c87-d088-4784-9dc7-0f0774b52cdf" class=""><a href="http://www.ohiohistory.org/local-history-office/americorps" id="59909c87-d088-4784-9dc7-0f0774b52cdf" class="navLevel3" title="AmeriCorps"><span>AmeriCorps</span></a></li><li id="3fd1a9f4-950a-4085-b9d3-2cd2995b3f93" class=""><a href="http://www.ohiohistory.org/local-history-office/funding-opportunities" id="3fd1a9f4-950a-4085-b9d3-2cd2995b3f93" class="navLevel3" title="Funding Opportunities"><span>Funding Opportunities</span></a><div class="level1"><div class="level1-inner"><ul><li id="73eb616f-71c6-4b7b-8f83-e810607e988d" class=""><a href="http://www.ohiohistory.org/local-history-office/funding-opportunities/history-fund" id="73eb616f-71c6-4b7b-8f83-e810607e988d" class="navLevel4" title="History Fund"><span>History Fund</span></a></li></ul></div></div></li><li id="5e448282-7ef2-4431-8874-b012c892d21d" class=""><a href="http://www.ohiohistory.org/local-history-office/professional-development" id="5e448282-7ef2-4431-8874-b012c892d21d" class="navLevel3" title="Professional Development"><span>Professional Development</span></a></li><li id="864c0d3d-3102-450a-bb56-88a36a6a63f9" class=""><a href="http://www.ohiohistory.org/local-history-office/commemorations" id="864c0d3d-3102-450a-bb56-88a36a6a63f9" class="navLevel3" title="Commemorations"><span>Commemorations</span></a><div class="level1"><div class="level1-inner"><ul><li id="f805fe15-4c64-4a41-97d0-d1857eacd6d2" class=""><a href="http://www.ohiohistory.org/local-history-office/commemorations/war-of-1812" id="f805fe15-4c64-4a41-97d0-d1857eacd6d2" class="navLevel4" title="War Of 1812"><span>War Of 1812</span></a></li><li id="f35a8efc-568f-4cbf-9565-9f06081ad2e7" class=""><a href="http://www.ohiohistory.org/local-history-office/commemorations/columbus-bicentennial" id="f35a8efc-568f-4cbf-9565-9f06081ad2e7" class="navLevel4" title="Columbus Bicentennial"><span>Columbus Bicentennial</span></a></li></ul></div></div></li><li id="c6c44c9c-377a-499d-af3a-83329cc31a70" class=""><a href="http://www.ohiohistory.org/local-history-office/ohio-local-history-alliance" id="c6c44c9c-377a-499d-af3a-83329cc31a70" class="navLevel3" title="Ohio Local History Alliance"><span>Ohio Local History Alliance</span></a></li><li id="17d7feda-5e76-430e-996e-2ce5c8c7a49b" class=""><a href="http://www.ohiohistory.org/local-history-office/historical-markers" id="17d7feda-5e76-430e-996e-2ce5c8c7a49b" class="navLevel3" title="Historical Markers"><span>Historical Markers</span></a></li><li id="2b974344-31f3-4424-8bb7-23d3a2c73bb8" class=""><a href="http://www.ohiohistory.org/local-history-office/lho-services" id="2b974344-31f3-4424-8bb7-23d3a2c73bb8" class="navLevel3" title="LHO Services"><span>LHO Services</span></a></li><li id="6b5bf932-63d3-40db-9ae8-6f9b45959502" class=""><a href="http://www.ohiohistory.org/local-history-office/other-service-organizations" id="6b5bf932-63d3-40db-9ae8-6f9b45959502" class="navLevel3" title="Other Service Organizations"><span>Other Service Organizations</span></a></li><li id="ddb37b4b-3bc1-4131-b123-31cfadcdc17a" class=""><a href="http://www.ohiohistory.org/local-history-office/digitization" id="ddb37b4b-3bc1-4131-b123-31cfadcdc17a" class="navLevel3" title="Digitization"><span>Digitization</span></a></li><li id="a48d161e-94db-4bf1-a37b-5b3c04244858" class=""><a href="http://www.ohiohistory.org/local-history-office/standards-and-guidelines" id="a48d161e-94db-4bf1-a37b-5b3c04244858" class="navLevel3" title="Standards and Guidelines"><span>Standards and Guidelines</span></a></li><li id="f9d08e06-fe85-481e-9c69-2c4b824c0682" class=""><a href="http://www.ohiohistory.org/local-history-office/staff" id="f9d08e06-fe85-481e-9c69-2c4b824c0682" class="navLevel3" title="Staff"><span>Staff</span></a></li><li id="f4b9e714-c73f-4c01-8773-bb0ca462074e" class=""><a href="http://www.ohiohistory.org/local-history-office/about-lho" id="f4b9e714-c73f-4c01-8773-bb0ca462074e" class="navLevel3" title="About LHO"><span>About LHO</span></a></li></ul></div></div></li><li id="state-historic-preservation-office" class="link7"><a href="http://www.ohiohistory.org/state-historic-preservation-office" class="navLevel2" title="State Historic Preservation Office"><span>State Historic Preservation Office</span></a><div class="level1" style="display: none;"><div class="level1-inner"><ul><li id="bc63dadd-7ac9-4d7f-85ea-9e0bea825c03" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/building-doctor" id="bc63dadd-7ac9-4d7f-85ea-9e0bea825c03" class="navLevel3" title="Building Doctor"><span>Building Doctor</span></a><div class="level1"><div class="level1-inner"><ul><li id="412bfda9-b3c6-40f1-8685-c01e27a696da" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/building-doctor/preservation-briefs" id="412bfda9-b3c6-40f1-8685-c01e27a696da" class="navLevel4" title="Preservation Briefs"><span>Preservation Briefs</span></a></li><li id="188fb14b-547d-49af-88b0-909d4b65d58d" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/building-doctor/illustrated-guidelines-for-rehabilitating-historic-buildings-" id="188fb14b-547d-49af-88b0-909d4b65d58d" class="navLevel4" title="Illustrated Guidelines for Rehabilitating Historic Buildings "><span>Illustrated Guidelines for Rehabilitating Historic Buildings </span></a></li><li id="3f63d72f-24c2-40f3-a98b-e2e48a4991b3" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/building-doctor/national-park-service-online-education-links" id="3f63d72f-24c2-40f3-a98b-e2e48a4991b3" class="navLevel4" title="National Park Service Online Education Links"><span>National Park Service Online Education Links</span></a></li></ul></div></div></li><li id="078d8418-2922-470f-8291-c9e229c574aa" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/certified-local-governments" id="078d8418-2922-470f-8291-c9e229c574aa" class="navLevel3" title="Certified Local Governments"><span>Certified Local Governments</span></a><div class="level1"><div class="level1-inner"><ul><li id="f1b51c6d-eff7-492a-b89b-434150d469db" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/certified-local-governments" id="f1b51c6d-eff7-492a-b89b-434150d469db" class="navLevel4" title="Certified Local Government Grants"><span>Certified Local Government Grants</span></a></li></ul></div></div></li><li id="0497a69c-8db6-45f8-b695-a40aecfe915f" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/federal-and-state-reviews" id="0497a69c-8db6-45f8-b695-a40aecfe915f" class="navLevel3" title="Federal and State Reviews"><span>Federal and State Reviews</span></a></li><li id="4dd2b755-3120-477b-8600-f407e6f5ba15" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/forms-fees--downloads" id="4dd2b755-3120-477b-8600-f407e6f5ba15" class="navLevel3" title="Forms Fees &amp; Downloads"><span>Forms Fees &amp; Downloads</span></a><div class="level1"><div class="level1-inner"><ul><li id="252c89d0-1869-4b72-b78d-f4e846c9dd41" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/forms-fees--downloads/consultants" id="252c89d0-1869-4b72-b78d-f4e846c9dd41" class="navLevel4" title="Consultants"><span>Consultants</span></a></li></ul></div></div></li><li id="b3abc951-7a4e-4d04-84ad-46822220a09c" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/grants-and-funding-sources" id="b3abc951-7a4e-4d04-84ad-46822220a09c" class="navLevel3" title="Grants and Funding Sources"><span>Grants and Funding Sources</span></a></li><li id="2360cb7e-dac2-4988-8d96-2f266f2bf59f" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/historic-preservation-planning" id="2360cb7e-dac2-4988-8d96-2f266f2bf59f" class="navLevel3" title="Historic Preservation Planning"><span>Historic Preservation Planning</span></a></li><li id="cbcbe15c-65b1-4dcf-a81d-c685a4b92bf3" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/national-register-of-historic-places" id="cbcbe15c-65b1-4dcf-a81d-c685a4b92bf3" class="navLevel3" title="National Register of Historic Places"><span>National Register of Historic Places</span></a><div class="level1"><div class="level1-inner"><ul><li id="9f0014b4-969f-4228-ac2f-1735247f94aa" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/national-register-of-historic-places/ohspab" id="9f0014b4-969f-4228-ac2f-1735247f94aa" class="navLevel4" title="OHSPAB"><span>OHSPAB</span></a></li></ul></div></div></li><li id="18d9fb03-c9e2-4c2d-a172-86565bbfc46d" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/state-historic-preservation-office-awards" id="18d9fb03-c9e2-4c2d-a172-86565bbfc46d" class="navLevel3" title="State Historic Preservation Office Awards"><span>State Historic Preservation Office Awards</span></a><div class="level1"><div class="level1-inner"><ul><li id="1b0759fe-9457-488f-8fe6-ec0064cd2153" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/state-historic-preservation-office-awards/2012" id="1b0759fe-9457-488f-8fe6-ec0064cd2153" class="navLevel4" title="2012"><span>2012</span></a></li><li id="85f5f99b-82ba-4f4a-b048-b78e8e699d14" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/state-historic-preservation-office-awards/2013" id="85f5f99b-82ba-4f4a-b048-b78e8e699d14" class="navLevel4" title="2013"><span>2013</span></a></li></ul></div></div></li><li id="ec2f6ab5-afc6-4d3b-94a0-a21cd017ba29" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/online-mapping-system" id="ec2f6ab5-afc6-4d3b-94a0-a21cd017ba29" class="navLevel3" title="Online Mapping System"><span>Online Mapping System</span></a><div class="level1"><div class="level1-inner"><ul><li id="40461b6f-eebd-4274-8888-53a17c8cae3e" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/online-mapping-system/iform" id="40461b6f-eebd-4274-8888-53a17c8cae3e" class="navLevel4" title="IForm"><span>IForm</span></a></li><li id="abf12f2e-8643-4ed5-86a9-4bccdac44fd6" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/online-mapping-system/record-search-service" id="abf12f2e-8643-4ed5-86a9-4bccdac44fd6" class="navLevel4" title="Record Search Service"><span>Record Search Service</span></a></li></ul></div></div></li><li id="f2c78864-e585-40f2-b2c7-38c9b634515d" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/preservation-where-you-live" id="f2c78864-e585-40f2-b2c7-38c9b634515d" class="navLevel3" title="Preservation Where You Live"><span>Preservation Where You Live</span></a></li><li id="cf7f2dfe-de3f-41a3-91d5-62d8ecc701ee" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/survey-and-inventory" id="cf7f2dfe-de3f-41a3-91d5-62d8ecc701ee" class="navLevel3" title="Survey and Inventory"><span>Survey and Inventory</span></a><div class="level1"><div class="level1-inner"><ul><li id="4acf220d-0c07-49d7-9483-9ae6513ed9de" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/survey-and-inventory/ohio-modern" id="4acf220d-0c07-49d7-9483-9ae6513ed9de" class="navLevel4" title="Ohio Modern"><span>Ohio Modern</span></a></li></ul></div></div></li><li id="76400b3d-2e58-437c-bbd3-09074f0e63c7" class=""><a href="http://www.ohiohistory.orghttp://www.ohiohistory.org/state-historic-preservation-office/tax-incentives-for-historic-preservation" id="76400b3d-2e58-437c-bbd3-09074f0e63c7" class="navLevel3" title="Tax Incentives for Historic Preservation"><span>Tax Incentives for Historic Preservation</span></a></li><li id="9ec5bbed-7d09-4b44-8e54-c98163a6e65a" class=""><a href="http://www.ohiohistory.org/state-historic-preservation-office/about-us" id="9ec5bbed-7d09-4b44-8e54-c98163a6e65a" class="navLevel3" title="About Us"><span>About Us</span></a></li></ul></div></div></li><li id="publications" class="link8"><a href="http://www.ohiohistory.org/publications" class="navLevel2" title="Publications"><span>Publications</span></a><div class="level1" style="display: none;"><div class="level1-inner"><ul><li id="76974e79-180f-4cf5-9470-58ee5d13e7be" class=""><a href="http://www.ohiohistory.org/publications/timeline" id="76974e79-180f-4cf5-9470-58ee5d13e7be" class="navLevel3" title="TIMELINE Magazine"><span>TIMELINE Magazine</span></a></li><li id="d4686acc-707d-47bc-bd33-8acc87c98949" class=""><a href="http://www.ohiohistory.org/publications/ohio-history" id="d4686acc-707d-47bc-bd33-8acc87c98949" class="navLevel3" title="Ohio History"><span>Ohio History</span></a></li><li id="dcadb9cb-bdef-43c3-8ade-f60b40064244" class=""><a href="http://www.ohiohistory.org/publications/echoes" id="dcadb9cb-bdef-43c3-8ade-f60b40064244" class="navLevel3" title="Echoes"><span>Echoes</span></a></li><li id="2442a55c-fc97-4bd6-8077-cedd5e99f2c4" class=""><a href="http://www.ohiohistory.org/publications/ohio-histore-news/2014" id="2442a55c-fc97-4bd6-8077-cedd5e99f2c4" class="navLevel3" title="Ohio Histore-news"><span>Ohio Histore-news</span></a><div class="level1"><div class="level1-inner"><ul><li id="fe8f2296-c8ea-44de-8f5b-6f277912f6a8" class=""><a href="http://www.ohiohistory.org/publications/ohio-histore-news/2012/november-30-2012" id="fe8f2296-c8ea-44de-8f5b-6f277912f6a8" class="navLevel4" title="2012"><span>2012</span></a></li><li id="0e71ae04-6ee1-4d97-83ad-8501933d6303" class=""><a href="http://www.ohiohistory.org/publications/ohio-histore-news/2013/december-5-2013" id="0e71ae04-6ee1-4d97-83ad-8501933d6303" class="navLevel4" title="2013"><span>2013</span></a></li><li id="550b924d-e94e-44e7-9799-25062d6d758f" class=""><a href="http://www.ohiohistory.org/publications/ohio-histore-news/2014/april-28-2014" id="550b924d-e94e-44e7-9799-25062d6d758f" class="navLevel4" title="2014"><span>2014</span></a></li><li id="359a964a-e676-4b3b-b34f-d844b88a00ed" class=""><a href="http://www.ohiohistory.org/publications/ohio-histore-news/archive-pages" id="359a964a-e676-4b3b-b34f-d844b88a00ed" class="navLevel4" title="Archive pages"><span>Archive pages</span></a></li></ul></div></div></li><li id="0456e15c-2af7-45a2-945e-44f9cc633fd7" class=""><a href="http://www.ohiohistory.org/publications/email-lists" id="0456e15c-2af7-45a2-945e-44f9cc633fd7" class="navLevel3" title="E-Newsletter Sign-Up"><span>E-Newsletter Sign-Up</span></a><div class="level1"><div class="level1-inner"><ul><li id="a4de5690-9898-46aa-815e-c6674ff4ade5" class=""><a href="http://www.ohiohistory.org/publications/email-lists/email-list-sign-up-forms" id="a4de5690-9898-46aa-815e-c6674ff4ade5" class="navLevel4" title="Email List Sign-Up Forms"><span>Email List Sign-Up Forms</span></a></li><li id="ee5f575d-bbae-459f-9498-08dbb4dbe8a5" class=""><a href="http://www.ohiohistory.org/publications/email-lists/unsubscribe-forms" id="ee5f575d-bbae-459f-9498-08dbb4dbe8a5" class="navLevel4" title="Unsubscribe Forms"><span>Unsubscribe Forms</span></a></li><li id="e25d91d6-af88-460f-b4ab-2ea9da0bcbb7" class=""><a href="http://www.ohiohistory.org/publications/email-lists/unsubscribe-confirmation" id="e25d91d6-af88-460f-b4ab-2ea9da0bcbb7" class="navLevel4" title="Unsubscribe Confirmation"><span>Unsubscribe Confirmation</span></a></li></ul></div></div></li></ul></div></div></li></ul>
-				</div>
-				<div id="search">
-					<label for="search"></label>
-					<input name="ctl11$ctlHeader$txtSearch" type="text" id="ctl11_ctlHeader_txtSearch" class="input-text">
-                    <a id="ctl11_ctlHeader_btnSearch" class="submit-button" href="javascript:__doPostBack('ctl11$ctlHeader$btnSearch','')">Go</a>
-					<script>
-						$('#search input').on('focus change paste keypress', function(){
-							$(document).keypress(function(e) {
-								if(e.which == 13) {
-									eval($('.submit-button').attr('href'));
-								}
-							});
-						});
-					</script>
-				</div>
-				<ul class="social-media-links-top">
-						<li id="enews-top"><a href="http://www.ohiohistory.org/e-news">Histore-news</a></li>
-						<li id="facebook-top"><a href="http://www.facebook.com/pages/Ohio-Historical-Society/22003234344">Facebook</a></li>
-						<li id="twitter-top"><a href="https://twitter.com/ohiohistory">Twitter</a></li>
-						<li id="youtube-top"><a href="http://www.youtube.com/ohiohistory">YouTube</a></li>
-					</ul>
-				<select name="quick-links" onchange="load(this.form)" id="quick-links">
-					<script>
-					<!--
-					  if (is_mac)
-					  {
-					   document.write('<option value="" selected>- - - - - - - - -');
-					  }
-					  else
-					  {
-					   document.write('<option value="" selected>- - - - - - - - - - - -')
-					  }
-					// -->
-					</script>
-					<option value="" selected="">Quick Links</option>
-					<option value="http://www.ohiohistory.org/ohio-historic-preservation-office/building-doctor" target="_blank">Building Doctor</option>
-					<option value="http://www.ohiohistory.org/ohio-historic-preservation-office/certified-local-governments" target="_blank">Certified Local Government</option>
-					<option value="http://www.creativelearningfactory.org/" target="_blank">Creative Learning Factory</option>
-					<option value="http://ohsweb.ohiohistory.org/death" target="_blank">Death Certificate Index</option>
-					<option value="http://www.ohiohistory.org/museums-and-historic-sites/historic-sites--facilities-projects" target="_blank">Historic Sites &amp; Facilities Projects</option>
-					<option value="http://www.ohiohistory.org/collections--archives/state-archives/lgrp-home" target="_blank">Local Government Records Program</option>
-					<option value="http://www.ohioasamerica.org/" target="_blank">Ohio As America Textbook</option>
-					<option value="http://www.ohiocivilwar150.org/" target="_blank">Ohio Civil War 150</option>
-					<option value="http://www.ohiohistory.org/local-history-office/historical-markers" target="_blank">Ohio Historical Markers</option>
-					<option value="http://www.ohiomemory.org" target="_blank">Ohio Memory</option>
-					<option value="http://ohsweb.ohiohistory.org/ohiopix" target="_blank">OhioPix</option>
-					<option value="http://www.ohiohistory.org/occ/" target="_blank">Online Collections Catalog</option>
-					<option value="http://www.ohiohistory.org/collections--archives/state-archives" target="_blank">Records Retention &amp; Disposition</option>
-					<option value="http://www.ohiohistory.org/statehoodday" target="_blank">Statehood Day</option>
+			</form>
+			<div id="heading" class="container"><h1>Microfilm Newspaper List Search<h1>
+			</div>
+			
+			<div id="maincontent" class="container">
+				<form id="newsform" name="newssearch" action="results.php" method="POST" onsubmit="return validateForm()">
+				<br/>
+				Title:  <input type="search" name="title" size="25" maxsize="50">
+				City: <input type="search" name="city" size="25" maxsize="50">
+				<br/>
+				County: 
+				<select type="search" name="county">
+					<option value="" selected></option>
+					<option value="ADAMS">ADAMS</option>
+					<option value="ALLEN">ALLEN</option>
+					<option value="ASHLAND">ASHLAND</option>
+					<option value="ASHTABULA">ASHTABULA</option>
+					<option value="ATHENS">ATHENS</option>
+					<option value="AUGLAIZE">AUGLAIZE</option>
+					<option value="BELMONT">BELMONT</option>
+					<option value="BROWN">BROWN</option>
+					<option value="BUTLER">BUTLER</option>
+					<option value="CARROLL">CARROLL</option>
+					<option value="CHAMPAIGN">CHAMPAIGN</option>
+					<option value="CLARK">CLARK</option>
+					<option value="CLERMONT">CLERMONT</option>
+					<option value="CLINTON">CLINTON</option>
+					<option value="COLUMBIANA">COLUMBIANA</option>
+					<option value="COSHOCTON">COSHOCTON</option>
+					<option value="CRAWFORD">CRAWFORD</option>
+					<option value="CUYAHOGA">CUYAHOGA</option>
+					<option value="DARKE">DARKE</option>
+					<option value="DEFIANCE">DEFIANCE</option>
+					<option value="DELAWARE">DELAWARE</option>
+					<option value="ERIE">ERIE</option>
+					<option value="FAIRFIELD">FAIRFIELD</option>
+					<option value="FAYETTE">FAYETTE</option>
+					<option value="FRANKLIN">FRANKLIN</option>
+					<option value="FULTON">FULTON</option>
+					<option value="GALLIA">GALLIA</option>
+					<option value="GEAUGA">GEAUGA</option>
+					<option value="GREENE">GREENE</option>
+					<option value="GUERNSEY">GUERNSEY</option>
+					<option value="HAMILTON">HAMILTON</option>
+					<option value="HANCOCK">HANCOCK</option>
+					<option value="HARDIN">HARDIN</option>
+					<option value="HARRISON">HARRISON</option>
+					<option value="HENRY">HENRY</option>
+					<option value="HIGHLAND">HIGHLAND</option>
+					<option value="HOCKING">HOCKING</option>
+					<option value="HOLMES">HOLMES</option>
+					<option value="HURON">HURON</option>
+					<option value="JACKSON">JACKSON</option>
+					<option value="JEFFERSON">JEFFERSON</option>
+					<option value="KNOX">KNOX</option>
+					<option value="LAKE">LAKE</option>
+					<option value="LAWRENCE">LAWRENCE</option>
+					<option value="LICKING">LICKING</option>
+					<option value="LOGAN">LOGAN</option>
+					<option value="LORAIN">LORAIN</option>
+					<option value="LUCAS">LUCAS</option>
+					<option value="MADISON">MADISON</option>
+					<option value="MAHONING">MAHONING</option>
+					<option value="MARION">MARION</option>
+					<option value="MEDINA">MEDINA</option>
+					<option value="MEIGS">MEIGS</option>
+					<option value="MERCER">MERCER</option>
+					<option value="MIAMI">MIAMI</option>
+					<option value="MONROE">MONROE</option>
+					<option value="MONTGOMERY">MONTGOMERY</option>
+					<option value="MORGAN">MORGAN</option>
+					<option value="MORROW">MORROW</option>
+					<option value="MUSKINGUM">MUSKINGUM</option>
+					<option value="NOBLE">NOBLE</option>
+					<option value="OTTAWA">OTTAWA</option>
+					<option value="PAULDING">PAULDING</option>
+					<option value="PERRY">PERRY</option>
+					<option value="PICKAWAY">PICKAWAY</option>
+					<option value="PIKE">PIKE</option>
+					<option value="PORTAGE">PORTAGE</option>
+					<option value="PREBLE">PREBLE</option>
+					<option value="PUTNAM">PUTNAM</option>
+					<option value="RICHLAND">RICHLAND</option>
+					<option value="ROSS">ROSS</option>
+					<option value="SANDUSKY">SANDUSKY</option>
+					<option value="SCIOTO">SCIOTO</option>
+					<option value="SENECA">SENECA</option>
+					<option value="SHELBY">SHELBY</option>
+					<option value="STARK">STARK</option>
+					<option value="SUMMIT">SUMMIT</option>
+					<option value="TRUMBULL">TRUMBULL</option>
+					<option value="TUSCARAWAS">TUSCARAWAS</option>
+					<option value="UNION">UNION</option>
+					<option value="VAN WERT">VAN WERT</option>
+					<option value="VINTON">VINTON</option>
+					<option value="WARREN">WARREN</option>
+					<option value="WASHINGTON">WASHINGTON</option>
+					<option value="WAYNE">WAYNE</option>
+					<option value="WILLIAMS">WILLIAMS</option>
+					<option value="WOOD">WOOD</option>
+					<option value="WYANDOT">WYANDOT</option>
 				</select>
-				<ul id="nav-quicklinks">
-					<li id="nav-donate"><a href="http://www.ohiohistory.org/donate">Give</a></li>
-					<li id="nav-join"><a href="http://www.ohiohistory.org/membership" onclick="pageTracker._trackPageview('http://www.ohiohistory.org/membership/topButton.html');">Join</a></li>
-					<li id="nav-shop"><a href="http://www.ohiohistorystore.com">Shop</a></li>
-				</ul>
+				Year: <input type="search" name="year" size="4" maxsize="4">
+				<br/>
+				<input type="submit" value="Search" />
+				</form>
+
+			<div id="instructions" class="maincontent">
+				<p>This is a database of MICROFILMED Ohio newspapers available for use in the Archives/Library Reading Room or through interlibrary loan.
+				<br/>Search by NEWSPAPER TITLE, CITY, or COUNTY.</p>
+			</div>
 		</div>
-	<div id="heading" class="container"><!--Aug 25 changed class to id & added class to container!--><h1>Microfilm Newspaper List Search<h1></div>
-	
-	<div id="maincontent" class="container"><!--Aug 25 changed class to id & added class to container!-->
-	<!--<div class="userinput">!-->
-	<!--<div style="width:100%">!-->
-	<!--style="width: 500px;margin: 0 auto"!-->
-	
-	<form id="newsform" name="newssearch" action="results.php" method="POST" onsubmit="return validateForm()">
-	<br/>Title:  <input type="search" name="title" size="25" maxsize="50">
-	City:  <input type="search" name="city" size="25" maxsize="50">
-	<br/>County: 
-	<select type="search" name="county">
-		<option value="" selected></option>
-		<option value="ADAMS">ADAMS</option>
-		<option value="ALLEN">ALLEN</option>
-		<option value="ASHLAND">ASHLAND</option>
-		<option value="ASHTABULA">ASHTABULA</option>
-		<option value="ATHENS">ATHENS</option>
-		<option value="AUGLAIZE">AUGLAIZE</option>
-		<option value="BELMONT">BELMONT</option>
-		<option value="BROWN">BROWN</option>
-		<option value="BUTLER">BUTLER</option>
-		<option value="CARROLL">CARROLL</option>
-		<option value="CHAMPAIGN">CHAMPAIGN</option>
-		<option value="CLARK">CLARK</option>
-		<option value="CLERMONT">CLERMONT</option>
-		<option value="CLINTON">CLINTON</option>
-		<option value="COLUMBIANA">COLUMBIANA</option>
-		<option value="COSHOCTON">COSHOCTON</option>
-		<option value="CRAWFORD">CRAWFORD</option>
-		<option value="CUYAHOGA">CUYAHOGA</option>
-		<option value="DARKE">DARKE</option>
-		<option value="DEFIANCE">DEFIANCE</option>
-		<option value="DELAWARE">DELAWARE</option>
-		<option value="ERIE">ERIE</option>
-		<option value="FAIRFIELD">FAIRFIELD</option>
-		<option value="FAYETTE">FAYETTE</option>
-		<option value="FRANKLIN">FRANKLIN</option>
-		<option value="FULTON">FULTON</option>
-		<option value="GALLIA">GALLIA</option>
-		<option value="GEAUGA">GEAUGA</option>
-		<option value="GREENE">GREENE</option>
-		<option value="GUERNSEY">GUERNSEY</option>
-		<option value="HAMILTON">HAMILTON</option>
-		<option value="HANCOCK">HANCOCK</option>
-		<option value="HARDIN">HARDIN</option>
-		<option value="HARRISON">HARRISON</option>
-		<option value="HENRY">HENRY</option>
-		<option value="HIGHLAND">HIGHLAND</option>
-		<option value="HOCKING">HOCKING</option>
-		<option value="HOLMES">HOLMES</option>
-		<option value="HURON">HURON</option>
-		<option value="JACKSON">JACKSON</option>
-		<option value="JEFFERSON">JEFFERSON</option>
-		<option value="KNOX">KNOX</option>
-		<option value="LAKE">LAKE</option>
-		<option value="LAWRENCE">LAWRENCE</option>
-		<option value="LICKING">LICKING</option>
-		<option value="LOGAN">LOGAN</option>
-		<option value="LORAIN">LORAIN</option>
-		<option value="LUCAS">LUCAS</option>
-		<option value="MADISON">MADISON</option>
-		<option value="MAHONING">MAHONING</option>
-		<option value="MARION">MARION</option>
-		<option value="MEDINA">MEDINA</option>
-		<option value="MEIGS">MEIGS</option>
-		<option value="MERCER">MERCER</option>
-		<option value="MIAMI">MIAMI</option>
-		<option value="MONROE">MONROE</option>
-		<option value="MONTGOMERY">MONTGOMERY</option>
-		<option value="MORGAN">MORGAN</option>
-		<option value="MORROW">MORROW</option>
-		<option value="MUSKINGUM">MUSKINGUM</option>
-		<option value="NOBLE">NOBLE</option>
-		<option value="OTTAWA">OTTAWA</option>
-		<option value="PAULDING">PAULDING</option>
-		<option value="PERRY">PERRY</option>
-		<option value="PICKAWAY">PICKAWAY</option>
-		<option value="PIKE">PIKE</option>
-		<option value="PORTAGE">PORTAGE</option>
-		<option value="PREBLE">PREBLE</option>
-		<option value="PUTNAM">PUTNAM</option>
-		<option value="RICHLAND">RICHLAND</option>
-		<option value="ROSS">ROSS</option>
-		<option value="SANDUSKY">SANDUSKY</option>
-		<option value="SCIOTO">SCIOTO</option>
-		<option value="SENECA">SENECA</option>
-		<option value="SHELBY">SHELBY</option>
-		<option value="STARK">STARK</option>
-		<option value="SUMMIT">SUMMIT</option>
-		<option value="TRUMBULL">TRUMBULL</option>
-		<option value="TUSCARAWAS">TUSCARAWAS</option>
-		<option value="UNION">UNION</option>
-		<option value="VAN WERT">VAN WERT</option>
-		<option value="VINTON">VINTON</option>
-		<option value="WARREN">WARREN</option>
-		<option value="WASHINGTON">WASHINGTON</option>
-		<option value="WAYNE">WAYNE</option>
-		<option value="WILLIAMS">WILLIAMS</option>
-		<option value="WOOD">WOOD</option>
-		<option value="WYANDOT">WYANDOT</option>
-	</select>
-	
-	Year: <input type="search" name="year" size="4" maxsize="4">
-	<br/><input type="submit" value="Search" />
-</form>
-<!--</div>!-->
+			<div id="endmaincontent" class="container"></div>
+			<div id="altinstructions" class="container">
+				<p>A complete list of all the newspapers, including both filmed and unfilmed (original paper) titles, that are available for use at the Ohio Historical Society's Archives/Library can be accessed using the <a href="http://www.ohiohistory.org/occ/">Online Collection Catalog's</a> Newspaper Database search feature.</p>
+			</div>
 
-<div id="instructions" class="maincontent">
-<!--<div style="width:500px;margin: 0 auto;">!-->
-	
-<p>This is a database of MICROFILMED Ohio newspapers available for use in the Archives/Library Reading Room or through interlibrary loan.
-<br/>Search by NEWSPAPER TITLE, CITY, or COUNTY.</p>
-</div>
-</div>
-<div id="endmaincontent" class="container"></div>
-<div id="altinstructions" class="container">
-<p>A complete list of all the newspapers, including both filmed and unfilmed (original paper) titles, that are available for use at the Ohio Historical Society's Archives/Library can be accessed using the <a href="http://www.ohiohistory.org/occ/">Online Collection Catalog's</a> Newspaper Database search feature.</p>
-<!--<img src="bg-items-highlighted-bottom.png">!-->
-</div>
+			<div id="endcontainer"></div>
+			<div id="footer" class="container">
+				<div class="container">
+					<div class="footer-nav" id="footer-nav-1">
+						<ul>
+							<li><a href="http://www.ohiohistory.org/museums/location">Map of Locations</a></li>
+							<li><a href="http://www.ohiohistory.org/about-us/contact">Contact Us</a></li>
+							<li><a href="http://www.ohiohistory.org/faqs">FAQ</a></li>
+							<li><a href="http://www.ohiohistory.org/about-us/website/sitemap">Web Site Map</a></li>
+							<li><a href="http://www.youtube.com/ohiohistory">OHS Video Channel</a></li>
+							<ul class="social-media-links">
+									<li id="facebook"><a href="http://www.facebook.com/pages/Ohio-Historical-Society/22003234344">Facebook</a></li>
+									<li id="twitter"><a href="https://twitter.com/ohiohistory">Twitter</a></li>
+									<li id="youtube"><a href="http://www.youtube.com/ohiohistory">YouTube</a></li>
+									<li id="enews"><a href="http://www.ohiohistory.org/enews">Histore-news</a></li>
+							</ul>
+						</ul>
+					</div>
+				<div class="footer-nav" id="footer-nav-3">
+					<ul>
+						<li><a href="http://www.ohiohistory.org/jobs/current-openings">Jobs</a></li>
+						<li><a href="http://www.ohiohistory.org/volunteer-department/new-volunteers">Volunteer</a></li>
+						<li><a href="http://www.ohiohistory.org/about-us/advocacy">Advocacy</a></li>
+						<li><a href="http://www.ohiohistory.org/programs--events/event-rental">Facility Rental</a></li>
+						<li><a href="http://www.ohiohistory.org/museums/ohc">Ohio History Center</a></li>
+					</ul>
 
-<!--</div>!-->
-<div id="endcontainer"></div>
-<div id="footer" class="container">
-		<div class="container">
-
-		<div class="footer-nav" id="footer-nav-1">
-			<ul>
-				<li><a href="http://www.ohiohistory.org/museums/location">Map of Locations</a></li>
-				<li><a href="http://www.ohiohistory.org/about-us/contact">Contact Us</a></li>
-				<li><a href="http://www.ohiohistory.org/faqs">FAQ</a></li>
-				<li><a href="http://www.ohiohistory.org/about-us/website/sitemap">Web Site Map</a></li>
-				<li><a href="http://www.youtube.com/ohiohistory">OHS Video Channel</a></li>
-				<ul class="social-media-links">
-						<li id="facebook"><a href="http://www.facebook.com/pages/Ohio-Historical-Society/22003234344">Facebook</a></li>
-						<li id="twitter"><a href="https://twitter.com/ohiohistory">Twitter</a></li>
-						<li id="youtube"><a href="http://www.youtube.com/ohiohistory">YouTube</a></li>
-						<li id="enews"><a href="http://www.ohiohistory.org/enews">Histore-news</a></li>
-				</ul>
-			</ul>
+				</div>
+				<div class="footer-nav" id="footer-nav-3">
+					<ul>
+						<li><a href="http://www.ohiohistory.org/about-us">About us</a></li>
+						<li><a href="http://www.ohiohistory.org/e-news">Ohio HistorE-News</a></li>
+						<li><a href="http://www.ohiohistory.org/about-us/newsroom">Newsroom</a></li>
+						<li><a href="http://www.ohiohistory.org/about-us/fact-sheet">Fact Sheet</a></li>
+						<li><a href="http://www.ohiohistory.org/about-us/privacy-policy">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div style="align:center; margin-bottom:0.3em; position:absolute; bottom:20%; left:33%; text-align:center;" valign="bottom"><small>800 E. 17<sup>th</sup> Ave. Columbus, OH 43211
+				<br>
+				(614) 297-2300
+				</small>
+				</div>
+			</div>
 		</div>
-		<div class="footer-nav" id="footer-nav-3">
-			<ul>
-				<li><a href="http://www.ohiohistory.org/jobs/current-openings">Jobs</a></li>
-				<li><a href="http://www.ohiohistory.org/volunteer-department/new-volunteers">Volunteer</a></li>
-				<li><a href="http://www.ohiohistory.org/about-us/advocacy">Advocacy</a></li>
-				<li><a href="http://www.ohiohistory.org/programs--events/event-rental">Facility Rental</a></li>
-				<li><a href="http://www.ohiohistory.org/museums/ohc">Ohio History Center</a></li>
-			</ul>
-
-		</div>
-		<div class="footer-nav" id="footer-nav-3">
-			<ul>
-				<li><a href="http://www.ohiohistory.org/about-us">About us</a></li>
-				<li><a href="http://www.ohiohistory.org/e-news">Ohio HistorE-News</a></li>
-				<li><a href="http://www.ohiohistory.org/about-us/newsroom">Newsroom</a></li>
-				<li><a href="http://www.ohiohistory.org/about-us/fact-sheet">Fact Sheet</a></li>
-				<li><a href="http://www.ohiohistory.org/about-us/privacy-policy">Privacy Policy</a></li>
-			</ul>
-
-		</div>
-		<div style="align:center; margin-bottom:0.3em; position:absolute; bottom:20%; left:33%; text-align:center;" valign="bottom"><small>800 E. 17<sup>th</sup> Ave. Columbus, OH 43211
-		<br>
-		(614) 297-2300
-		</small></div>
-	</div>
-<!---->
-    <!-- CLARIVOY CODE / DO NOT REMOVE -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["setCookieDomain", "*.www.ohiohistory.org"]);
-  _paq.push(["trackPageView"]);
-  _paq.push(["enableLinkTracking"]);
-
-  (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://id.clarivoy.com/";
-    _paq.push(["setTrackerUrl", u+"piwik.php"]);
-    _paq.push(["setSiteId", "42"]);
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-
-<script type="text/javascript">
-var ut_params = ut_params || [];ut_params.push("UT-736573600");//version:0.4
-(function() {var ut = document.createElement('script'); ut.type = 'text/javascript'; ut.async = true;
-ut.src = (("https:" == document.location.protocol) ? "https://" : "http://") + 'pixel.claritytag.com/javascripts/clarity.js';
-var script = document.getElementsByTagName('script')[0]; script.parentNode.insertBefore(ut, script);})();
-</script>
-<!-- END CLARIVOY CODE -->
-
-</div>
-</div>
-</div>
-</div>
 </body>
 </html>

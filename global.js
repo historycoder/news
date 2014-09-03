@@ -16,7 +16,7 @@ $(function(){
        out: hideDropdown // function = onMouseOut callback (REQUIRED)    
   };
 
-  $("#nav-main > ul > li").hoverIntent( config );
+  $('#nav-main > ul > li').hoverIntent( config );
   
   function showDropdown(){
     $(this).children(".level1").fadeIn();
