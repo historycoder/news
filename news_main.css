@@ -705,15 +705,26 @@ div.jGrowl div.resultsAlerts {
 }
 #paging-section {
 	text-align:center;
-	padding:6px;
+	float: center;
 	height: 30px;
+	width: 961px;
+	position: relative;
+	margin: 0 auto;
+	padding:6px;
+	clear: both;
 }
 #bottom-paging-section{
 	text-align:center;
-	padding:6px;
+	float: center;
 	height: 30px;
-	margin-top:10px;
-	margin-bottom: 40px;
+	width: 961px;
+	position: relative;
+	margin: 0% auto 3% auto;
+	padding:6px;
+	/*height: 30px;*/
+	/*margin-top:10px;
+	margin-bottom: 40px;*/
+	clear: both;
 	
 }
 	
