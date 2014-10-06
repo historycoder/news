@@ -1031,8 +1031,13 @@ text-align: left;
 /**Paginate**/
 #paging-section {
 	margin-top:1em;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-align: center;
 	font-size: 14px;
-	clear: both;	
+	clear: both;
+	position: center;
 }
 	
 .paginate {
