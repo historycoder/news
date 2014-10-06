@@ -131,7 +131,12 @@ a img {
 .image img {
 	display:block;
 }
-
+hr{
+	height: 6px;
+	margin: 0 0 15px 0;
+	clear: both;
+ }
+ 
 /*hr {
 	background:url("img/bg-horizontal-line.png") no-repeat left center;
 	height:12px;
